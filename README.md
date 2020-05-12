@@ -97,3 +97,11 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+## 📝 Notes
+
+$color1: rgba(253, 203, 88, 1);
+$color2: rgba(177, 15, 46, 1);
+$color3: rgba(87, 0, 0, 1);
+$color4: rgba(154, 170, 180, 1);
+\$color5: rgba(252, 171, 64, 1);

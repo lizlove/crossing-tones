@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap");
 html {
-  font-family: sans-serif;
+  font-family: "Alike Angular", serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -42,10 +43,12 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  color: #570000ff;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: #fcab40ff;
 }
 abbr[title] {
   border-bottom: none;
@@ -185,7 +188,7 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em "Alike Angular", georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -200,7 +203,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: "Alike Angular", georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
