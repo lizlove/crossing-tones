@@ -8,37 +8,15 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-        display: `flex`,
-        alignItems: `baseline`,
-        justifyContent: `space-between`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#33322d`,
-            textDecoration: `none`,
-          }}
-        >
+    <div className="header-container">
+      <h2 style={{ margin: 0 }}>
+        <Link className="header-link" to="/">
           {siteTitle}
         </Link>
-      </h1>
-      <Link
-        to="/who-we-are"
-        style={{
-          color: `#33322d`,
-          textDecoration: `none`,
-          background: `#f7fafc`,
-        }}
-      >
-        Who We Are
-      </Link>
+      </h2>
+      <div className="header-link-group">
+        <Link to="/who-we-are">Who We Are</Link>
+      </div>
     </div>
   </header>
 );

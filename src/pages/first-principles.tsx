@@ -1,20 +1,18 @@
+// Gatsby supports TypeScript natively!
 import React from "react";
-import { Link } from "gatsby";
+import { PageProps, Link } from "gatsby";
 
 import Layout from "../components/layout";
-import Image from "../components/image";
 import SEO from "../components/seo";
 
-const IndexPage = () => (
+const WhoWeAre = (props: PageProps) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="First Principles" />
     <h1>First Principles</h1>
     <p>
-      <i>
-        This consortium called <b className="title">Crossing Tones</b> proposes
-        to act as a receivership and halfway-house for collections of Jazz and
-        Jazz-adjacent music material.
-      </i>
+      This consortium called Crossing Tones proposes to act as a receivership
+      and halfway-house for collections of Jazz and Jazz-adjacent music
+      material.
     </p>
     <h3>I. The original artifacts matter</h3>
     <p>
@@ -75,4 +73,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default WhoWeAre;
