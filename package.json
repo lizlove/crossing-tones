@@ -18,8 +18,8 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
-    "prettier": "2.0.5",
-    "@now/node": "^1.6.1"
+    "@now/node": "^1.6.1",
+    "prettier": "2.0.5"
   },
   "keywords": [
     "gatsby"
