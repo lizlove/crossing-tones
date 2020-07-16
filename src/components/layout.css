@@ -50,23 +50,15 @@ template {
 }
 a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
   color: var(--onyx);
   text-decoration: none;
-  background-image: linear-gradient(var(--glaucous) 0%, var(--glaucous) 100%);
-  background-repeat: repeat-x;
-  background-position: 0 100%;
-  background-size: 1px 1px;
+  font-weight: 600;
   cursor: pointer;
 }
 a:active,
 a:hover {
   outline-width: 0;
-  background-image: linear-gradient(
-    var(--orange-peel) 0%,
-    var(--orange-peel) 100%
-  );
-  background-size: 1px 1px;
+  background: rgba(255, 159, 28, 0.2);
 }
 abbr[title] {
   border-bottom: none;
@@ -668,8 +660,4 @@ footer {
 
 .header-link {
   background-image: none;
-}
-
-.title:hover {
-  background: rgba(255, 159, 28, 0.2);
 }
