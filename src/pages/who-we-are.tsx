@@ -10,6 +10,12 @@ const WhoWeAre = (props: PageProps) => (
     <SEO title="Who We Are" />
     <h1>Who we are</h1>
     <p>
+      <b>David Beal</b>(Queens NY)
+      <br></br>
+      Artist and musician. Collector of jazz 78s and co-leader of the Freehold
+      Hot Club.
+    </p>
+    <p>
       <b>Melissa Jones</b> (Morristown NJ)
       <br></br>
       Jazz collector and independent researcher; specializes in 78 era. Vast
@@ -38,13 +44,13 @@ const WhoWeAre = (props: PageProps) => (
       Marion Brown.
     </p>
     <p>
-      <b>Charles Iselin </b>(Chicago IL and Brooklyn NY)
+      <b>Charles Iselin </b>(Chicago IL and Manhattan NY)
       <br></br>
-      Civil engineer and collector specializing in pre-war Jazz. Researching for
-      discography of Adrian Rollini.
+      Structural engineer and collector specializing in pre-war Jazz. Current
+      researcher on the life and music of Garnet Clarke.
     </p>
     <p>
-      <b>Matthew Rivera</b> (NYC and Louisville KY)
+      <b>Matthew Rivera</b> (Brooklyn NY and Louisville KY)
       <br></br>
       Filmmaker and collector specializing in Jazz 78s. Operates own 78rpm DJ
       service based on 78s.
