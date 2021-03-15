@@ -29,7 +29,7 @@ const WhoWeAre = (props: PageProps) => (
       researcher on the life and music of Garnet Clarke.
     </p>
     <p>
-      <b>Melissa Jones</b> (Morristown, NJ)
+      <b>Melissa Jones [Emeritus]</b> (Morristown, NJ)
       <br></br>
       Jazz collector and independent researcher; specializes in 78 era. Vast
       experience of the offerings at Jazz at Lincoln Center. Mother of modern
