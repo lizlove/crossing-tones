@@ -29,13 +29,6 @@ const WhoWeAre = (props: PageProps) => (
       researcher on the life and music of Garnet Clarke.
     </p>
     <p>
-      <b>Melissa Jones [Emeritus]</b> (Morristown, NJ)
-      <br></br>
-      Jazz collector and independent researcher; specializes in 78 era. Vast
-      experience of the offerings at Jazz at Lincoln Center. Mother of modern
-      Hot Club initiative.
-    </p>
-    <p>
       <b>Joe Lizzi</b> (Queens, NY)
       <br></br>
       Audio engineer, record producer, collector specializing in avant garde
@@ -54,6 +47,13 @@ const WhoWeAre = (props: PageProps) => (
       Researcher and lecturer, in broadcast and classroom, broad range
       collector. Former label staff producer, now freelance for own and other
       interests.
+    </p>
+    <p>
+      <b>Melissa Jones</b>, <i>Founding Member</i> (2020-2021)
+      <br></br>
+      Jazz collector and independent researcher; specialized in the 78 rpm era. Vast
+      experience of the offerings at Jazz at Lincoln Center. Mother of modern
+      Hot Club initiative.
     </p>
   </Layout>
 );
