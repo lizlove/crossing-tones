@@ -4,8 +4,7 @@ const Mission = () => (
   <div>
     <h1>Mission Statement</h1>
     <p>
-      This consortium called Crossing Tones proposes to act as custodians for collections of Jazz
-      music and related material.
+    Crossing Tones acts as an intermediary custodian for significant collections of Jazz music and related items. We gather essential source materials and prepare them for acquisition, preservation, and use in meaningful teaching and listening initiatives. Through our efforts we hope to facilitate research, deepen appreciation, and broaden the listener base for the music.
     </p>
   </div>
 );

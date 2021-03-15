@@ -1,16 +1,16 @@
+// Gatsby supports TypeScript natively!
 import React from 'react';
+import { PageProps } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Mission from '../components/mission';
-import Principles from '../components/principles';
 
-const IndexPage = () => (
+const MissionStatement = (props: PageProps) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Mission" />
     <Mission />
-    <Principles />
   </Layout>
 );
 
-export default IndexPage;
+export default MissionStatement;
