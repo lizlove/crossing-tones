@@ -105,3 +105,15 @@ $color2: rgba(177, 15, 46, 1);
 $color3: rgba(87, 0, 0, 1);
 $color4: rgba(154, 170, 180, 1);
 \$color5: rgba(252, 171, 64, 1);
+
+
+## Next:
+
+- Landing page (Highlight the Zoom event "Crossing Tones Power Hour")
+  - Current events / Future events
+- Navigation
+  - Newsletter
+  - Contact
+  - About (combine Mission Statement and Who We Are)
+  - Support (paypal)
+  - Projects
