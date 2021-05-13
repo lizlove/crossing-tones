@@ -4,13 +4,13 @@ import { PageProps, Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Principles from '../components/principles';
+import Events from '../components/events';
 
-const FirstPrinciples = (props: PageProps) => (
+const AllEvents = (props: PageProps) => (
   <Layout>
-    <SEO title="First Principles" />
-    <Principles />
+    <SEO title="Events" />
+    <Events />
   </Layout>
 );
 
-export default FirstPrinciples;
+export default AllEvents;

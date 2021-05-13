@@ -15,7 +15,8 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h2>
       <div className="header-link-group">
-        <Link to="/who-we-are">Who We Are</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/about">About</Link>
       </div>
     </div>
   </header>

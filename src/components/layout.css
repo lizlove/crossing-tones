@@ -640,11 +640,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
-
 footer {
   font-size: 70%;
 }
-
 .header-container {
   margin: 0 auto;
   max-width: 960px;
@@ -653,11 +651,11 @@ footer {
   align-items: baseline;
   justify-content: space-between;
 }
-
 .header-link-group > * {
   margin-left: 1rem;
+  font-weight: 700;
 }
-
 .header-link {
   background-image: none;
+  font-weight: 800;
 }

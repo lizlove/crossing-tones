@@ -1,13 +1,7 @@
-// Gatsby supports TypeScript natively!
-import React from "react";
-import { PageProps, Link } from "gatsby";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-
-const WhoWeAre = (props: PageProps) => (
-  <Layout>
-    <SEO title="Who We Are" />
+const Who = () => (
+  <div>
     <h1>Who we are</h1>
     <p>
       <b>David Beal</b> (Queens, NY)
@@ -55,7 +49,7 @@ const WhoWeAre = (props: PageProps) => (
       experience of the offerings at Jazz at Lincoln Center. Mother of modern
       Hot Club initiative.
     </p>
-  </Layout>
+  </div>
 );
 
-export default WhoWeAre;
+export default Who;
