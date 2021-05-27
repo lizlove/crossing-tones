@@ -61,17 +61,8 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 
 ## ↪️ Next:
-
-- Landing page (Highlight the Zoom event "Crossing Tones Power Hour")
-  - Current events / Future events
-- Navigation
-  - Newsletter
-  - About (combine Mission Statement and Who We Are)
-  - Support (paypal)
-  - Projects
-  - Contact
-
 - Mail-to in landing page
 - gatsby-node with events
 - 2 column layout on About Page
 - Sticky footer with contact page
+- Fix these heinous button colors
