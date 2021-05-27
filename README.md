@@ -66,8 +66,12 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
   - Current events / Future events
 - Navigation
   - Newsletter
-  - Contact
   - About (combine Mission Statement and Who We Are)
   - Support (paypal)
   - Projects
+  - Contact
+
+- Mail-to in landing page
 - gatsby-node with events
+- 2 column layout on About Page
+- Sticky footer with contact page

@@ -659,3 +659,28 @@ footer {
   background-image: none;
   font-weight: 800;
 }
+.button {
+  align-items: center;
+  border: #635e69;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  background: #ff9f1c;
+  border: 1px solid #ff9f1c;
+  font-weight: 600;
+  font-size: 0.875rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  padding: 0.25rem 0.75rem;
+  color: #48434f;
+  margin-left: 0.75rem;
+}
+
+.button-secondary {
+  background: #7180b9;
+  border: 1px solid #7180b9;
+}

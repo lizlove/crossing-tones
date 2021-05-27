@@ -4,13 +4,20 @@ import { PageProps, Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Events from '../components/events';
+import EventPost from '../components/event-post';
 
-const AllEvents = (props: PageProps) => (
+const Events = (props: PageProps) => (
   <Layout>
     <SEO title="Events" />
-    <Events />
+    <div>
+      <h1>Events</h1>
+
+      <h2>Upcoming Events</h2>
+      <EventPost />
+      <h2>Past Events</h2>
+      <EventPost />
+    </div>
   </Layout>
 );
 
-export default AllEvents;
+export default Events;
