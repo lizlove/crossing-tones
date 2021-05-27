@@ -70,3 +70,4 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
   - About (combine Mission Statement and Who We Are)
   - Support (paypal)
   - Projects
+- gatsby-node with events
