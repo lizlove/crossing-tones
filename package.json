@@ -18,7 +18,7 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
-    "@now/node": "^1.6.1",
+    "@vercel/node": "^1.11.0",
     "prettier": "2.0.5"
   },
   "keywords": [
