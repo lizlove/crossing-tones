@@ -669,7 +669,7 @@ footer {
   justify-content: center;
   line-height: 1;
   text-decoration: none;
-  background: #ff9f1c;
+  background: rgba(255, 159, 28, 0.2);
   border: 1px solid #ff9f1c;
   font-weight: 600;
   font-size: 0.875rem;
@@ -677,10 +677,9 @@ footer {
   min-width: 2rem;
   padding: 0.25rem 0.75rem;
   color: #48434f;
-  margin-left: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
-.button-secondary {
-  background: #7180b9;
-  border: 1px solid #7180b9;
+a.button:hover {
+  background: #ff9f1c;
 }
