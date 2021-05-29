@@ -47,7 +47,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 ## 💫 Deploy
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flizlove%2Fcrossing-tones)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -65,4 +65,4 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - gatsby-node with events
 - 2 column layout on About Page
 - Sticky footer with contact page
-- Fix these heinous button colors
+- Fix these heinous button color
