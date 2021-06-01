@@ -61,8 +61,12 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 
 ## ↪️ Next:
-- Mail-to in landing page
-- gatsby-node with events
+- Zoom link in landing page
+- gatsby-node with projects
 - 2 column layout on About Page
 - Sticky footer with contact page
-- Fix these heinous button color
+- Fix this heinous button/highlight color
+- Fix layout width
+- Put support buttons in footer
+- Get newsletter from P.
+- Get support link from P.

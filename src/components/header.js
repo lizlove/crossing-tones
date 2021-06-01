@@ -18,8 +18,8 @@ const Header = ({ siteTitle }) => (
         <Link to="/events">Events</Link>
         <Link to="/projects">Projects</Link>
         <Link to="/about">About</Link>
-        <Link className="button" to="/">Newsletter</Link>
-        <Link className="button" to="/">Support</Link>
+        {/* <Link className="button" to="/">Newsletter</Link>
+        <Link className="button" to="/">Support</Link> */}
       </div>
     </div>
   </header>

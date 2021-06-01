@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-pages-event-page-js","path":"/event-page/","result":{"errors":[{"message":"Variable \"$slug\" of required type \"String!\" was not provided.","locations":[{"line":1,"column":69}]}],"pageContext":{}},"staticQueryHashes":["3649515864","63159454"]}

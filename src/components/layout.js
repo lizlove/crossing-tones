@@ -33,10 +33,12 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()},{` `}
+        <main className="main">{children}</main>
+        <footer className="footer">
+        <div>
+        © {new Date().getFullYear()},{` `}
           <a href="https://www.crossingtones.org">Crossing Tones</a>
+        </div>
         </footer>
       </div>
     </>

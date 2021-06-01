@@ -111,7 +111,7 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
-  "component---src-pages-events-tsx": hot(preferDefault(__webpack_require__(/*! ./src/pages/events.tsx */ "./src/pages/events.tsx"))),
+  "component---src-pages-events-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/events.js */ "./src/pages/events.js"))),
   "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
   }
 
@@ -31846,13 +31846,7 @@ const Header = ({
   to: "/projects"
 }, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
   to: "/about"
-}, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
-  className: "button",
-  to: "/"
-}, "Newsletter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__["Link"], {
-  className: "button",
-  to: "/"
-}, "Support"))));
+}, "About"))));
 
 Header.propTypes = {
   siteTitle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
@@ -31918,9 +31912,13 @@ const Layout = ({
       maxWidth: 960,
       padding: `0 1.0875rem 1.45rem`
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", null, "\xA9 ", new Date().getFullYear(), ",", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
+    className: "main"
+  }, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", {
+    className: "footer"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "\xA9 ", new Date().getFullYear(), ",", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "https://www.crossingtones.org"
-  }, "Crossing Tones"))));
+  }, "Crossing Tones")))));
 };
 
 Layout.propTypes = {
@@ -32043,39 +32041,14 @@ const NotFoundPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 
 /***/ }),
 
-/***/ "./src/pages/events.tsx":
-/*!******************************!*\
-  !*** ./src/pages/events.tsx ***!
-  \******************************/
+/***/ "./src/pages/events.js":
+/*!*****************************!*\
+  !*** ./src/pages/events.js ***!
+  \*****************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Events; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
-/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
-
-
-
-
-function Events({
-  data
-}) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Events"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, data.allMarkdownRemark.totalCount, " Events"), data.allMarkdownRemark.edges.map(({
-    node
-  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    key: node.id
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: node.fields.slug
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, node.frontmatter.title, " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, "\u2014 ", node.frontmatter.date)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, node.excerpt))))));
-}
-const query = "3856371944"; // Split into past event query and upcoming event query
+throw new Error("Module build failed (from ./node_modules/gatsby/dist/utils/babel-loader.js):\nSyntaxError: /Users/elovero/dev/_persy/crossing-tones/src/pages/events.js: 'Const declarations' require an initialization value. (52:18)\n\n\u001b[0m \u001b[90m 50 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 51 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 52 |\u001b[39m \u001b[36mexport\u001b[39m \u001b[36mconst\u001b[39m query($today \u001b[33m=\u001b[39m today) \u001b[33m=\u001b[39m graphql\u001b[32m`\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 53 |\u001b[39m \u001b[32m  query {\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 54 |\u001b[39m \u001b[32m    upcoming: allMarkdownRemark(\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 55 |\u001b[39m \u001b[32m      filter: {frontmatter: {date: {gte: $today}}}\u001b[39m\u001b[0m\n    at Object._raise (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/error.js:134:45)\n    at Object.raiseWithData (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/error.js:129:17)\n    at Object.raise (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/error.js:78:17)\n    at Object.parseVar (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:1103:18)\n    at Object.parseVarStatement (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:784:10)\n    at Object.parseStatementContent (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:286:21)\n    at Object.parseStatement (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:226:17)\n    at Object.parseExportDeclaration (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:1916:17)\n    at Object.maybeParseExportDeclaration (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:1863:31)\n    at Object.parseExport (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:1790:29)\n    at Object.parseStatementContent (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:324:25)\n    at Object.parseStatement (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:226:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:958:25)\n    at Object.parseBlockBody (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:934:10)\n    at Object.parseProgram (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:118:10)\n    at Object.parseTopLevel (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:103:25)");
 
 /***/ }),
 

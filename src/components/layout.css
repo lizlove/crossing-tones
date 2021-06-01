@@ -683,3 +683,9 @@ footer {
 a.button:hover {
   background: #ff9f1c;
 }
+.main {
+  min-height: calc(100vh - (6 * 1.45rem));
+}
+.footer {
+  display: grid;
+}
