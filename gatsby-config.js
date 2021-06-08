@@ -5,6 +5,12 @@ module.exports = {
     author: `@lizlove`
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -50
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,9 +19,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,6 +31,6 @@ module.exports = {
         icon: `src/images/ct-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // `gatsby-plugin-offline`,
+    `gatsby-transformer-remark`,
   ],
 };

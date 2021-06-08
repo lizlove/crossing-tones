@@ -1134,3 +1134,16 @@ footer {
 .items-center {
   align-items: center;
 }
+.grid {
+  display: grid;
+  grid-template-columns: auto 20%;
+  grid-gap: 20px;
+}
+.grid-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid-right > a.anchorlink {
+  margin-bottom: .5rem;
+}
