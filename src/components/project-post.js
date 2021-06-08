@@ -6,9 +6,9 @@ const ProjectPost = () => (
     <p>
       Collection of recordings and ephemera taken by artist and musician Sugiyama.
     </p>
-    <p>
+    {/* <p>
       <i>I will become a template of a project post.</i>
-    </p>
+    </p> */}
   </div>
 );
 

@@ -563,6 +563,9 @@ th {
 li {
   margin-bottom: calc(1.45rem / 2);
 }
+li > a {
+  font-weight: normal;
+}
 ol li {
   padding-left: 0;
 }
@@ -982,7 +985,8 @@ abbr {
 
 .valid input[type='email'],
 .valid input[type='text'],
-.valid input[type='number'] {
+.valid input[type='number'],
+.valid textarea {
   border-color: green;
 }
 
@@ -992,7 +996,8 @@ abbr {
 
 .invalid input[type='email'],
 .invalid input[type='text'],
-.invalid input[type='number'] {
+.invalid input[type='number'],
+.invalid textarea {
   border-color: red;
 }
 
@@ -1113,7 +1118,12 @@ footer {
   font-size: 70%;
 }
 .footer {
-  display: grid;
+  padding: 1.45rem 1.0875rem;
+  max-width: 960px;
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin: 0 auto;
 }
 .flex {
   display: flex;

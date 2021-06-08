@@ -14,9 +14,9 @@ const IndexPage = () => (
     <p><Link className="button" to="/">Join us</Link></p>
     <h3>Schedule</h3>
     <ul>
-      <li>May 27th – Pharoah Sanders/Collective Black Artists (hosted by Parker Fishel)</li>
-      <li>June 10th – Buddy Rich Big Band with Anita O'Day (hosted by Joe Lizzi)</li>
-      <li>June 24th – Cecil Taylor solo (hosted by Ben Young)</li>
+      <li><Link to="/power-hour-5-27/">May 27th – Pharoah Sanders/Collective Black Artists (hosted by Parker Fishel)</Link></li>
+      <li><Link to="/power-hour-6-10/">June 10th – Buddy Rich Big Band with Anita O'Day (hosted by Joe Lizzi)</Link></li>
+      <li><Link to="/power-hour-6-24/">June 24th – Cecil Taylor solo (hosted by Ben Young)</Link></li>
     </ul>
   </div>
   </Layout>

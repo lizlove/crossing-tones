@@ -1,6 +1,6 @@
 ---
 title: "Cecil Taylor Solo"
-subtitle: "Power Hour"
+subtitle: "Crossing Tones Power Hour"
 date: "2021-06-24"
 time: "8PM ET"
 ---

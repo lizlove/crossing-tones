@@ -6,10 +6,6 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 const TextInputLiveFeedback = ({ label, helpText, ...props }) => {
   const [field, meta] = useField(props);
-
-  // Show inline feedback if EITHER
-  // - the input is focused AND value is longer than 2 characters
-  // - or, the has been visited (touched === true)
   const [didFocus, setDidFocus] = React.useState(false);
   const handleFocus = () => setDidFocus(true);
   const showFeedback =
@@ -48,10 +44,6 @@ const TextInputLiveFeedback = ({ label, helpText, ...props }) => {
 
 const TextareaLiveFeedback = ({ label, helpText, ...props }) => {
   const [field, meta] = useField(props);
-
-  // Show inline feedback if EITHER
-  // - the input is focused AND value is longer than 2 characters
-  // - or, the has been visited (touched === true)
   const [didFocus, setDidFocus] = React.useState(false);
   const handleFocus = () => setDidFocus(true);
   const showFeedback =
@@ -96,6 +88,7 @@ const Example = () => {
       message: ''
     },
     onSubmit: async (values) => {
+      // TODO: where is the submit email?
       await sleep(500);
       alert(JSON.stringify(values, null, 2));
     },
@@ -140,7 +133,7 @@ const Example = () => {
   );
 };
 
-export default class Contact extends React.Component {
+export default class ContactForm extends React.Component {
   render() {
     return (
       <div>

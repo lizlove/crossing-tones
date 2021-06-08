@@ -6,7 +6,7 @@ import SEO from '../components/seo';
 import Mission from '../components/mission';
 import Principles from '../components/principles';
 import Who from '../components/who';
-import Contact from '../components/contact';
+import Contact from '../components/contact-form';
 
 const About = (props: PageProps) => (
   <Layout>

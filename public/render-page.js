@@ -110,11 +110,13 @@ const { hot } = __webpack_require__(/*! react-hot-loader/root */ "./node_modules
 
 exports.ssrComponents = {
   "component---cache-dev-404-page-js": hot(preferDefault(__webpack_require__(/*! ./.cache/dev-404-page.js */ "./.cache/dev-404-page.js"))),
+  "component---src-events-event-page-js": hot(preferDefault(__webpack_require__(/*! ./src/events/event-page.js */ "./src/events/event-page.js"))),
   "component---src-pages-404-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/404.js */ "./src/pages/404.js"))),
   "component---src-pages-about-tsx": hot(preferDefault(__webpack_require__(/*! ./src/pages/about.tsx */ "./src/pages/about.tsx"))),
-  "component---src-pages-contact-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/contact.js */ "./src/pages/contact.js"))),
+  "component---src-pages-contact-tsx": hot(preferDefault(__webpack_require__(/*! ./src/pages/contact.tsx */ "./src/pages/contact.tsx"))),
   "component---src-pages-events-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/events.js */ "./src/pages/events.js"))),
-  "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js")))
+  "component---src-pages-index-js": hot(preferDefault(__webpack_require__(/*! ./src/pages/index.js */ "./src/pages/index.js"))),
+  "component---src-pages-projects-tsx": hot(preferDefault(__webpack_require__(/*! ./src/pages/projects.tsx */ "./src/pages/projects.tsx")))
   }
 
 
@@ -42163,16 +42165,16 @@ module.exports = JSON.parse("{\"data\":{\"site\":{\"siteMetadata\":{\"title\":\"
 
 /***/ }),
 
-/***/ "./src/components/contact.js":
-/*!***********************************!*\
-  !*** ./src/components/contact.js ***!
-  \***********************************/
+/***/ "./src/components/contact-form.js":
+/*!****************************************!*\
+  !*** ./src/components/contact-form.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Contact; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ContactForm; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
@@ -42188,10 +42190,7 @@ const TextInputLiveFeedback = ({
   helpText,
   ...props
 }) => {
-  const [field, meta] = Object(formik__WEBPACK_IMPORTED_MODULE_1__["useField"])(props); // Show inline feedback if EITHER
-  // - the input is focused AND value is longer than 2 characters
-  // - or, the has been visited (touched === true)
-
+  const [field, meta] = Object(formik__WEBPACK_IMPORTED_MODULE_1__["useField"])(props);
   const [didFocus, setDidFocus] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
 
   const handleFocus = () => setDidFocus(true);
@@ -42222,10 +42221,7 @@ const TextareaLiveFeedback = ({
   helpText,
   ...props
 }) => {
-  const [field, meta] = Object(formik__WEBPACK_IMPORTED_MODULE_1__["useField"])(props); // Show inline feedback if EITHER
-  // - the input is focused AND value is longer than 2 characters
-  // - or, the has been visited (touched === true)
-
+  const [field, meta] = Object(formik__WEBPACK_IMPORTED_MODULE_1__["useField"])(props);
   const [didFocus, setDidFocus] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
 
   const handleFocus = () => setDidFocus(true);
@@ -42259,6 +42255,7 @@ const Example = () => {
       message: ''
     },
     onSubmit: async values => {
+      // TODO: where is the submit email?
       await sleep(500);
       alert(JSON.stringify(values, null, 2));
     },
@@ -42295,7 +42292,7 @@ const Example = () => {
   }, "Reset"))));
 };
 
-class Contact extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+class ContactForm extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
   render() {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Contact Us"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       className: "contact-form"
@@ -42415,11 +42412,11 @@ const Layout = ({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("main", {
     className: "main"
-  }, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", {
+  }, children)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("footer", {
     className: "footer"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "\xA9 ", new Date().getFullYear(), ",", ` `, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
     href: "https://www.crossingtones.org"
-  }, "Crossing Tones")))));
+  }, "Crossing Tones"))));
 };
 
 Layout.propTypes = {
@@ -42464,6 +42461,25 @@ __webpack_require__.r(__webpack_exports__);
 const Principles = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "First Principles"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This consortium called Crossing Tones proposes to act as custodians for collections of Jazz music and related material."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "I. The original artifacts matter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "While the modern resources of music largely circulate in the digital realm, many stem from physical analog originals. Having and holding these originals is vital to accessing their art content and knowledge about them, so gathering and preserving them is the priority for the organization. Wherever it is feasible and wise they will be applied directly in work that we do or sanction."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "II. We intend to honor and respect the artists whose work is involved"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Crossing Tones exists in order to give appropriate credit to the creative artists who are responsible for this work. Foremost those are the musicians and composers, but also include photographers, writers, and graphic designers represented in our collections. To that end, soliciting artists\u2019 input in identification is a priority. Furthermore, we intend to cooperate with the initiatives of those artists and their representatives and estates, and to guide these decision-makers in choosing best practices for preservation, exhibition, and the future disposition of their own materials."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "While Crossing Tones may take courtesy credit for commercially licensed use, and will assume the rights for material in its care, the intellectual property rights of the artistic creators will remain intact. Nothing can or will be done without their permission or blessing."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Other rights-holders\u2014including publishing interests, venues, etc.\u2014may be involved; their stake in the proceedings will be respected but considered secondary to that of the artists."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "III. Teach it in / Teach it out"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Crossing Tones exists in part for the academic benefit of the network of researchers, publication interests, teachers, broadcasters, historians, and collectors. Of utmost importance, though, is for the materials to be used to broaden the listener base for the music. We will always advocate for free educational public programs that utilize fair use doctrine to present the music and its artifacts, suitably contextualized and annotated. This applies to the work we do with the materials while they are in our care, and it also is a major criterion for the decision-making about where these materials will end up finally."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "IV. Not all materials are of equal significance"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Collecting, cataloging, and preservation will be done on a triage basis\u2014taking into consideration which items are most endangered, which are most vital to the art histories they represent, and which are most kinetically in demand for research use or exhibit. Also, after careful consideration, some items will not be preserved\u2014not necessarily as a judgment of the artistic value of the contents, but most often because better editions of the meaningful part of the content is available from other sources."));
 
 /* harmony default export */ __webpack_exports__["default"] = (Principles);
+
+/***/ }),
+
+/***/ "./src/components/project-post.js":
+/*!****************************************!*\
+  !*** ./src/components/project-post.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const ProjectPost = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Sugiyama"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Collection of recordings and ephemera taken by artist and musician Sugiyama."));
+
+/* harmony default export */ __webpack_exports__["default"] = (ProjectPost);
 
 /***/ }),
 
@@ -42574,6 +42590,41 @@ const Who = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.crea
 
 /***/ }),
 
+/***/ "./src/events/event-page.js":
+/*!**********************************!*\
+  !*** ./src/events/event-page.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return EventPage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+
+
+
+function EventPage({
+  data
+}) {
+  const post = data.markdownRemark;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    title: post.frontmatter.title
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    class: "text-sm"
+  }, post.frontmatter.subtitle), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, post.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, post.frontmatter.date, ", ", post.frontmatter.time), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    dangerouslySetInnerHTML: {
+      __html: post.html
+    }
+  })));
+}
+const query = "1369381708";
+
+/***/ }),
+
 /***/ "./src/pages/404.js":
 /*!**************************!*\
   !*** ./src/pages/404.js ***!
@@ -42615,7 +42666,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_mission__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/mission */ "./src/components/mission.js");
 /* harmony import */ var _components_principles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/principles */ "./src/components/principles.js");
 /* harmony import */ var _components_who__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/who */ "./src/components/who.js");
-/* harmony import */ var _components_contact__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/contact */ "./src/components/contact.js");
+/* harmony import */ var _components_contact_form__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/contact-form */ "./src/components/contact-form.js");
 
 
 
@@ -42626,90 +42677,36 @@ __webpack_require__.r(__webpack_exports__);
 
 const About = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_2__["default"], {
   title: "About"
-}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_mission__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_principles__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_who__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_contact__WEBPACK_IMPORTED_MODULE_6__["default"], null));
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_mission__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_principles__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_who__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_contact_form__WEBPACK_IMPORTED_MODULE_6__["default"], null));
 
 /* harmony default export */ __webpack_exports__["default"] = (About);
 
 /***/ }),
 
-/***/ "./src/pages/contact.js":
-/*!******************************!*\
-  !*** ./src/pages/contact.js ***!
-  \******************************/
+/***/ "./src/pages/contact.tsx":
+/*!*******************************!*\
+  !*** ./src/pages/contact.tsx ***!
+  \*******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ContactPage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _components_contact_form__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/contact-form */ "./src/components/contact-form.js");
 
 
-class ContactPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
-  // state = {
-  //   firstName: "",
-  //   lastName: "",
-  // }
-  // handleInputChange = event => {
-  //   const target = event.target
-  //   const value = target.value
-  //   const name = target.name
-  //   this.setState({
-  //     [name]: value,
-  //   })
-  // }
-  // handleSubmit = event => {
-  //   event.preventDefault()
-  //   alert(`Welcome ${this.state.firstName} ${this.state.lastName}!`)
-  // }
-  render() {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Any place in your app!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Formik"], {
-      initialValues: {
-        email: '',
-        password: ''
-      },
-      validate: values => {
-        const errors = {};
 
-        if (!values.email) {
-          errors.email = 'Required';
-        } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
-          errors.email = 'Invalid email address';
-        }
 
-        return errors;
-      },
-      onSubmit: (values, {
-        setSubmitting
-      }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }
-    }, ({
-      isSubmitting
-    }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Form"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Field"], {
-      type: "email",
-      name: "email"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["ErrorMessage"], {
-      name: "email",
-      component: "div"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["Field"], {
-      type: "password",
-      name: "password"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_1__["ErrorMessage"], {
-      name: "password",
-      component: "div"
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-      type: "submit",
-      disabled: isSubmitting
-    }, "Submit"))));
-  }
 
-}
+const Contact = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  title: "Contact Us"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_contact_form__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
@@ -42794,6 +42791,34 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.
 }, "Join us")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h3", null, "Schedule"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "May 27th \u2013 Pharoah Sanders/Collective Black Artists (hosted by Parker Fishel)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "June 10th \u2013 Buddy Rich Big Band with Anita O'Day (hosted by Joe Lizzi)"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, "June 24th \u2013 Cecil Taylor solo (hosted by Ben Young)"))));
 
 /* harmony default export */ __webpack_exports__["default"] = (IndexPage);
+
+/***/ }),
+
+/***/ "./src/pages/projects.tsx":
+/*!********************************!*\
+  !*** ./src/pages/projects.tsx ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+/* harmony import */ var _components_project_post__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/project-post */ "./src/components/project-post.js");
+// Gatsby supports TypeScript natively!
+
+
+
+
+
+const Projects = props => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_seo__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  title: "Projects"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Projects"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_project_post__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+
+/* harmony default export */ __webpack_exports__["default"] = (Projects);
 
 /***/ }),
 

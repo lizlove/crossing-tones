@@ -61,12 +61,11 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 
 ## ↪️ Next:
-- Zoom link in landing page
-- gatsby-node with projects
 - 2 column layout on About Page
-- Sticky footer with contact page
-- Fix this heinous button/highlight color
-- Fix layout width
-- Put support buttons in footer
-- Get newsletter from P.
-- Get support link from P.
+
+## ⚠️ I need from y'all:
+- Newsletter signup link (mailchimp?).
+- Support button link (paypal?).
+- Zoom links for the events.
+- Email to send the contact form too.
+- More for the Sugiyama page.

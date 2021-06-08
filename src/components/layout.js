@@ -34,13 +34,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main className="main">{children}</main>
-        <footer className="footer">
+      </div>
+      <footer className="footer">
         <div>
         © {new Date().getFullYear()},{` `}
           <a href="https://www.crossingtones.org">Crossing Tones</a>
         </div>
-        </footer>
-      </div>
+      </footer>
     </>
   );
 };
