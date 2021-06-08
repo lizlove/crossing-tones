@@ -60,7 +60,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
           }
           fields {
             slug
@@ -70,7 +70,7 @@ export const query = graphql`
       }
     }
     past: allMarkdownRemark(
-      filter: {frontmatter: {date: {lt: $today}}}
+      filter: {frontmatter: {date: {lte: $today}}}
       sort: { fields: [frontmatter___date], order: ASC }
     ) {
       totalCount
@@ -79,7 +79,7 @@ export const query = graphql`
           id
           frontmatter {
             title
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "DD MMMM YYYY")
           }
           fields {
             slug

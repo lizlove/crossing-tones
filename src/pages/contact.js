@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
-export default class Contact extends React.Component {
+export default class ContactPage extends React.Component {
   // state = {
   //   firstName: "",
   //   lastName: "",
@@ -48,7 +48,7 @@ export default class Contact extends React.Component {
               <ErrorMessage name="email" component="div" />
               <Field type="password" name="password" />
               <ErrorMessage name="password" component="div" />
-              <button class="button" type="submit" disabled={isSubmitting}>
+              <button type="submit" disabled={isSubmitting}>
                 Submit
               </button>
             </Form>
