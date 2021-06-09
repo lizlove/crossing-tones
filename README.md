@@ -61,7 +61,8 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 
 ## ↪️ Next:
-- 2 column layout on About Page
+- Gatsby Event Query Fix
+- Image Src Package fix
 
 ## ⚠️ I need from y'all:
 - Newsletter signup link (mailchimp?).
