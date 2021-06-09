@@ -13,4 +13,4 @@ The Crossing Tones “Power Hour” is a biweekly broadcast of rare and unheard 
 <!-- Put Zoom link in the href -->
 <a class="button" href="https://simonsfoundation.zoom.us/j/91328673516?pwd=NnpuVnNpOGdDQUkvcldmMy9YTXRxUT09">Join us</a>
 
-<iframe src="https://giphy.com/embed/REPL2BIiGhyFO" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<!-- <iframe src="https://giphy.com/embed/REPL2BIiGhyFO" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> -->
