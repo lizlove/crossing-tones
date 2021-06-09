@@ -1147,3 +1147,11 @@ footer {
 .grid-right > a.anchorlink {
   margin-bottom: .5rem;
 }
+@media only screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: auto;
+  }
+  .grid-right {
+    display: none;
+  }
+}

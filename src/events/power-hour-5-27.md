@@ -1,7 +1,7 @@
 ---
 title: "Pharoah Sanders / Collective Black Artists"
 subtitle: "Crossing Tones Power Hour"
-date: "2021-05-27"
+date: 2021-05-27
 time: "8PM ET"
 image: "placeholder-records.jpg"
 ---

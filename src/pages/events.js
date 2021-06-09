@@ -2,17 +2,16 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo";
-import {getCurrentDate} from "../utils"
 
 export default function Events({ data }) {
-  console.log("🐕🐕‍🦺🐕‍🦺", data, getCurrentDate());
+  console.log("🐕🐕‍🦺🐕‍", data);
   const eventStyle = {marginBottom: "0.45rem", fontWeight: 700}
   return (
     <Layout>
       <SEO title="Events"/>
       <section>
       <h1>Upcoming Events</h1>
-      {/* <h4>{data.upcoming.allMarkdownRemark.totalCount} Events</h4> */}
+      {/* <h4>{data.upcoming.totalCount} Events</h4> */}
       {data.upcoming.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
@@ -29,7 +28,7 @@ export default function Events({ data }) {
     </section>
     <section>
     <h1>Past Events</h1>
-      {/* <h4>{data.past.allMarkdownRemark.totalCount} Events</h4> */}
+      {/* <h4>{data.past.totalCount} Events</h4> */}
       {data.past.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
@@ -49,40 +48,42 @@ export default function Events({ data }) {
 }
 
 export const query = graphql`
-  query($today: Date) {
-    upcoming: allMarkdownRemark(
-      filter: {frontmatter: {date: {gte: $today}}}
-      sort: { fields: [frontmatter___date], order: ASC }
+  query AllEvents($currentDate: Date!){
+    past: allMarkdownRemark(
+      filter: {
+        frontmatter: { date: { lt: $currentDate } }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
       edges {
         node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM YYYY")
-          }
           fields {
             slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
           }
           excerpt
         }
       }
     }
-    past: allMarkdownRemark(
-      filter: {frontmatter: {date: {lte: $today}}}
-      sort: { fields: [frontmatter___date], order: ASC }
+    upcoming: allMarkdownRemark(
+      filter: {
+        frontmatter: { date: { gte: $currentDate } }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
     ) {
       totalCount
       edges {
         node {
-          id
-          frontmatter {
-            title
-            date(formatString: "DD MMMM YYYY")
-          }
           fields {
             slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
           }
           excerpt
         }

@@ -4,8 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo";
 
 export default function EventPage({ data }) {
-  const post = data.markdownRemark
-  const src = `../images/${post.frontmatter.image}`;
+  const post = data.markdownRemark;
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
@@ -28,7 +27,6 @@ export const query = graphql`
         subtitle
         date(formatString: "dddd, MMMM DD")
         time
-        image
       }
     }
   }

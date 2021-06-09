@@ -1,6 +1,18 @@
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const { getCurrentDate } = require("./src/utils")
+
+function getCurrentDate() {
+  const d = new Date()
+  let month = (d.getMonth() + 1).toString()
+  if (month.length < 2) {
+    month = `0${month}`
+  }
+  let day = d.getDate().toString()
+  if (day.length < 2) {
+    day = `0${day}`
+  }
+  return `${d.getFullYear()}-${month}-${day}`
+}
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
@@ -11,7 +23,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     });
+    const today = getCurrentDate();
+    createNodeField({
+      node,
+      name: `currentDate`,
+      value: currentDate,
+    });
   }
+}
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  deletePage(page)
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      currentDate: getCurrentDate(),
+    },
+  })
 }
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -29,14 +59,13 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `)
-  console.log(getCurrentDate());
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/events/event-page.js`),
       context: {
         slug: node.fields.slug,
-        today: getCurrentDate()
+        today: node.fields.today
       },
     })
   })

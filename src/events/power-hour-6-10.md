@@ -1,7 +1,7 @@
 ---
 title: "Buddy Rich Big Band with Anita O'Day"
 subtitle: "Crossing Tones Power Hour"
-date: "2021-06-10"
+date: 2021-06-10
 time: "8PM ET"
 ---
 

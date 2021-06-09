@@ -61,7 +61,6 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 
 ## ↪️ Next:
-- Gatsby Event Query Fix
 - Image Src Package fix
 
 ## ⚠️ I need from y'all:
