@@ -74,10 +74,12 @@ a {
   cursor: pointer;
 }
 a:active,
-a:hover {
+a:hover{
   outline-width: 0;
-  /* border-bottom: rgba(255, 159, 28, 0.2); */
-  border-bottom: 2px solid var(--orange-peel);
+  border-bottom: 2px solid var(--orange-peel) !important;
+}
+a.bold-link {
+  font-weight: 700;
 }
 abbr[title] {
   border-bottom: none;
@@ -1110,6 +1112,9 @@ a.button:hover {
 .header-link {
   background-image: none;
   font-weight: 800;
+}
+a.header-link:hover {
+  border-bottom: none !important;
 }
 .main {
   min-height: calc(100vh - (6 * 1.45rem));

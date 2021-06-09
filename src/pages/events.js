@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo";
 
 export default function Events({ data }) {
-  console.log("🐕🐕‍🦺🐕‍", data);
   const eventStyle = {marginBottom: "0.45rem", fontWeight: 700}
   return (
     <Layout>
@@ -14,14 +13,14 @@ export default function Events({ data }) {
       {/* <h4>{data.upcoming.totalCount} Events</h4> */}
       {data.upcoming.edges.map(({ node }) => (
         <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h4 style={eventStyle}>
-              {node.frontmatter.title}{" "}
-              <span>
-                — {node.frontmatter.date}
-              </span>
-            </h4>
-          </Link>
+          <h4 style={eventStyle}>
+            <Link className="bold-link" to={node.fields.slug}>
+                {node.frontmatter.title}{" "}
+                <span>
+                  — {node.frontmatter.date}
+                </span>
+            </Link>
+          </h4>
           <p>{node.excerpt}</p>
         </div>
       ))}
@@ -31,14 +30,14 @@ export default function Events({ data }) {
       {/* <h4>{data.past.totalCount} Events</h4> */}
       {data.past.edges.map(({ node }) => (
         <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h4 style={eventStyle}>
+          <h4 style={eventStyle}>
+            <Link className="bold-link" to={node.fields.slug}>
               {node.frontmatter.title}{" "}
               <span>
                 — {node.frontmatter.date}
               </span>
-            </h4>
-          </Link>
+            </Link>
+          </h4>
           <p>{node.excerpt}</p>
         </div>
       ))}
