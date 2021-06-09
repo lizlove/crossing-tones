@@ -23,11 +23,10 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       name: `slug`,
       value: slug,
     });
-    const today = getCurrentDate();
     createNodeField({
       node,
       name: `currentDate`,
-      value: currentDate,
+      value: getCurrentDate(),
     });
   }
 }
