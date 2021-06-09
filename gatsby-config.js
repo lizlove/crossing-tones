@@ -1,16 +1,22 @@
 module.exports = {
   siteMetadata: {
     title: `Crossing Tones`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`,
-    author: `@gatsbyjs`,
+    description: `An intermediary custodian for significant collections of Jazz music and related items. We gather essential source materials and prepare them for acquisition, preservation, and educational initiatives.`,
+    author: `@lizlove`
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -50
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/`,
       },
     },
     {
@@ -25,8 +31,6 @@ module.exports = {
         icon: `src/images/ct-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-transformer-remark`,
   ],
 };

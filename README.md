@@ -47,7 +47,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 ## 💫 Deploy
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flizlove%2Fcrossing-tones)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
@@ -61,12 +61,12 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 
 ## ↪️ Next:
+- Gatsby Event Query Fix
+- Image Src Package fix
 
-- Landing page (Highlight the Zoom event "Crossing Tones Power Hour")
-  - Current events / Future events
-- Navigation
-  - Newsletter
-  - Contact
-  - About (combine Mission Statement and Who We Are)
-  - Support (paypal)
-  - Projects
+## ⚠️ I need from y'all:
+- Newsletter signup link (mailchimp?).
+- Support button link (paypal?).
+- Zoom links for the events.
+- Email to send the contact form too.
+- More for the Sugiyama page.
