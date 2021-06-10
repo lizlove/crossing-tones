@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
       </h2>
       <div className="header-link-group">
         <Link to="/events">Events</Link>
-        <Link to="/projects">Projects</Link>
+        <Link to="/collections">Collections</Link>
         <Link to="/about">About</Link>
         {/* <Link className="button" to="/">Newsletter</Link>
         <Link className="button" to="/">Support</Link> */}

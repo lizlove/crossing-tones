@@ -45,26 +45,48 @@ exports.onCreatePage = ({ page, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-  const result = await graphql(`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              slug
-            }
+  const events = await graphql(`
+  {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "event"}}}) {
+      edges {
+        node {
+          fields {
+            slug
           }
         }
       }
     }
+  }
   `)
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  events.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.fields.slug,
       component: path.resolve(`./src/events/event-page.js`),
       context: {
         slug: node.fields.slug,
         today: node.fields.today
+      },
+    })
+  })
+  const collections = await graphql(`
+  {
+    allMarkdownRemark(filter: {frontmatter: {type: {eq: "collection"}}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+  `)
+  collections.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/collections/collection-page.js`),
+      context: {
+        slug: node.fields.slug
       },
     })
   })

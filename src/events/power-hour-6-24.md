@@ -1,6 +1,7 @@
 ---
 title: "Cecil Taylor Solo"
 subtitle: "Crossing Tones Power Hour"
+type: "event"
 date: 2021-06-24
 time: "8PM ET"
 ---

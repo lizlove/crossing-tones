@@ -50,7 +50,7 @@ export const query = graphql`
   query AllEvents($currentDate: Date!){
     past: allMarkdownRemark(
       filter: {
-        frontmatter: { date: { lt: $currentDate } }
+        frontmatter: { date: { lt: $currentDate } type: {eq: "event"} }
       }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
@@ -70,7 +70,7 @@ export const query = graphql`
     }
     upcoming: allMarkdownRemark(
       filter: {
-        frontmatter: { date: { gte: $currentDate } }
+        frontmatter: { date: { gte: $currentDate } type: {eq: "event"}}
       }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
