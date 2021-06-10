@@ -14,20 +14,20 @@ const About = (props: PageProps) => (
     <SEO title="About" />
     <div className="grid">
       <div className="grid-left">
-        <a id="mission"></a>
-        <Mission />
-        <a id="principles"></a>
-        <Principles />
         <a id="who"></a>
         <Who />
         <a id="contact"></a>
         <Contact/>
       </div>
       <div className="grid-right">
-        <AnchorLink className="anchorlink" to="/about#mission" title="Mission Statement" />
+        <a id="mission"></a>
+        <Mission />
+        <a id="principles"></a>
+        <Principles />
+        {/* <AnchorLink className="anchorlink" to="/about#mission" title="Mission Statement" />
         <AnchorLink className="anchorlink" to="/about#principles" title="First Principles" />
         <AnchorLink className="anchorlink" to="/about#who" title="Who we are" />
-        <AnchorLink className="anchorlink" to="/about#contact" title="Contact" />
+        <AnchorLink className="anchorlink" to="/about#contact" title="Contact" /> */}
       </div>
     </div>
   </Layout>

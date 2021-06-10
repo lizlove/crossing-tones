@@ -1141,13 +1141,14 @@ footer {
 }
 .grid {
   display: grid;
-  grid-template-columns: auto 20%;
-  grid-gap: 20px;
+  grid-template-columns: 30% 70%;
+  grid-gap: 50px;
 }
-.grid-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.grid-left {
+  font-size: 80%
+}
+.grid-left > div > h1 {
+  font-size: calc(2.25rem * .8);
 }
 .grid-right > a.anchorlink {
   margin-bottom: .5rem;
@@ -1155,9 +1156,14 @@ footer {
 }
 @media only screen and (max-width: 480px) {
   .grid {
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
   }
   .grid-right {
-    display: none;
+    grid-row: 1;
   }
+  /* .grid-right {
+    display: none;
+  } */
 }
