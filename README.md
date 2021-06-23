@@ -67,8 +67,8 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - Add images to Sugiyama and events
 - Add landing page default event listings
 - Events: Add an intro of what the power hour is on the event pages and remove it from landing. (maybe another hero?)
-- instagram icon
 - Newsletter signup on navbar
+- Link in contact
 
 
 ## ✅ Done

@@ -1,6 +1,9 @@
 import { Link } from "gatsby";
+import instagram from "../images/insta.png"
 import PropTypes from "prop-types";
 import React from "react";
+
+const imageStyle= { marginBottom: 0};
 
 const Header = ({ siteTitle }) => (
   <header
@@ -18,6 +21,7 @@ const Header = ({ siteTitle }) => (
         <Link to="/events">Events</Link>
         <Link to="/collections">Collections</Link>
         <Link to="/about">About</Link>
+        <a href="https://www.instagram.com/CrossingTones/" rel="noreferrer" target="_blank"><img src={instagram} style={imageStyle} width={20} alt="Instagram"/></a>
         {/* <Link className="button" to="/">Newsletter</Link>
         <Link className="button" to="/">Support</Link> */}
       </div>

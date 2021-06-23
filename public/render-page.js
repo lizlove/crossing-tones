@@ -5291,41 +5291,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_insta_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../images/insta.png */ "./src/images/insta.png");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
+
+const imageStyle = {
+  marginBottom: 0
+};
 
 const Header = ({
   siteTitle
-}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("header", {
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("header", {
   style: {
     marginBottom: `.1rem`
   }
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
   className: "header-container"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("h2", {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("h2", {
   style: {
     margin: 0
   }
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
   className: "header-link",
   to: "/"
-}, siteTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement("div", {
+}, siteTitle)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
   className: "header-link-group"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
   to: "/events"
-}, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+}, "Events"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
   to: "/collections"
-}, "Collections"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
+}, "Collections"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
   to: "/about"
-}, "About"))));
+}, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+  href: "https://www.instagram.com/CrossingTones/",
+  rel: "noreferrer",
+  target: "_blank"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
+  src: _images_insta_png__WEBPACK_IMPORTED_MODULE_1__.default,
+  style: imageStyle,
+  width: 20,
+  alt: "Instagram"
+})))));
 
 Header.propTypes = {
-  siteTitle: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)
+  siteTitle: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)
 };
 Header.defaultProps = {
   siteTitle: ``
@@ -5513,9 +5527,51 @@ const NotFoundPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___defau
 /*!****************************!*\
   !*** ./src/pages/index.js ***!
   \****************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-throw new Error("Module build failed (from ./node_modules/gatsby/dist/utils/babel-loader.js):\nSyntaxError: /Users/elovero/dev/_persy/crossing-tones/src/pages/index.js: Missing semicolon. (37:3)\n\n\u001b[0m \u001b[90m 35 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 36 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 37 |\u001b[39m \u001b[33mMay\u001b[39m \u001b[35m6\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2021\u001b[39m – \u001b[33mNew\u001b[39m \u001b[33mMusic\u001b[39m \u001b[33mRemembers\u001b[39m the \u001b[33mOld\u001b[39m \u001b[33mMaster\u001b[39m \u001b[33mDuke\u001b[39m \u001b[33mEllington\u001b[39m – \u001b[33mTown\u001b[39m \u001b[33mHall\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJuly\u001b[39m \u001b[35m6\u001b[39m\u001b[33m,\u001b[39m \u001b[35m1980\u001b[39m [\u001b[33mLiz\u001b[39m\u001b[33m,\u001b[39m we have an image \u001b[36mfor\u001b[39m \u001b[36mthis\u001b[39m page]\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 38 |\u001b[39m \u001b[33mMay\u001b[39m \u001b[35m20\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2021\u001b[39m – \u001b[33mPharaoh\u001b[39m \u001b[33mSanders\u001b[39m \u001b[36mwith\u001b[39m the \u001b[33mCollective\u001b[39m \u001b[33mBlack\u001b[39m \u001b[33mArtists\u001b[39m \u001b[33mEnsemble\u001b[39m – \u001b[33mTown\u001b[39m \u001b[33mHall\u001b[39m\u001b[33m,\u001b[39m \u001b[33mJanuary\u001b[39m \u001b[35m26\u001b[39m\u001b[33m,\u001b[39m \u001b[35m1978\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 39 |\u001b[39m \u001b[33mJune\u001b[39m \u001b[35m3\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2021\u001b[39m– \u001b[33mMal\u001b[39m \u001b[33mWaldron\u001b[39m and \u001b[33mCharlie\u001b[39m \u001b[33mRouse\u001b[39m – \u001b[33mSoundscape\u001b[39m and unreleased studio session\u001b[33m,\u001b[39m early \u001b[35m1980\u001b[39ms\u001b[0m\n\u001b[0m \u001b[90m 40 |\u001b[39m \u001b[33mJune\u001b[39m \u001b[35m17\u001b[39m\u001b[33m,\u001b[39m \u001b[35m2021\u001b[39m – \u001b[33mTBD\u001b[39m\u001b[0m\n    at Object._raise (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/error.js:134:45)\n    at Object.raiseWithData (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/error.js:129:17)\n    at Object.raise (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/error.js:78:17)\n    at Object.semicolon (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/util.js:131:10)\n    at Object.parseExpressionStatement (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:883:10)\n    at Object.parseStatementContent (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:371:19)\n    at Object.parseStatement (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:226:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:958:25)\n    at Object.parseBlockBody (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:934:10)\n    at Object.parseProgram (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:118:10)\n    at Object.parseTopLevel (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/statement.js:103:25)\n    at Object.parse (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/parser/index.js:41:10)\n    at parse (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/parser/src/index.js:26:26)\n    at parser (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/core/lib/parser/index.js:52:34)\n    at parser.next (<anonymous>)\n    at normalizeFile (/Users/elovero/dev/_persy/crossing-tones/node_modules/@babel/core/lib/transformation/normalize-file.js:82:38)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./src/components/layout.js");
+/* harmony import */ var _components_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/seo */ "./src/components/seo.js");
+
+
+
+
+
+const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout__WEBPACK_IMPORTED_MODULE_2__.default, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_seo__WEBPACK_IMPORTED_MODULE_3__.default, {
+  title: "Home"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "hero"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "inner"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  className: "hero-head"
+}, "Crossing Tones "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+  className: "hero-subtitle"
+}, "an intermediary custodian for significant collections of Jazz music and related items."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "inner"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
+  className: "inner-heading"
+}, "Power Hour"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "The Crossing Tones \u201CPower Hour\u201D is a biweekly broadcast of rare and unheard music taken from collections currently in our care. Each Power Hour is livestreamed exclusively and will not be archived, so tuning in via Zoom is the only way to experience these sounds. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Join us every other Thursday from 8-9PM ET"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  className: "button",
+  to: "https://wpi.zoom.us/j/97495476280"
+}, "Listen!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Schedule"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/power-hour-5-6/"
+}, "May 6th \u2013  New Music Remembers the Old Master Duke Ellington (Town Hall, July 6, 1980)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/power-hour-5-20/"
+}, "May 20th \u2013 Pharaoh Sanders with the Collective Black Artists Ensemble (Town Hall, January 26, 1978)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/power-hour-6-3/"
+}, "June 3rd \u2013 Mal Waldron and Charlie Rouse (Soundscape and unreleased studio session, early 1980's)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/power-hour-6-17/"
+}, "June 17th \u2013 Charles Tyler Group (Sweet Basil, 1984)"))))));
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 
 /***/ }),
 
@@ -15138,6 +15194,21 @@ module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.c
 
 /***/ }),
 
+/***/ "./src/images/insta.png":
+/*!******************************!*\
+  !*** ./src/images/insta.png ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "static/insta-097f922fa69bbb78fba004f299989e47.png");
+
+/***/ }),
+
 /***/ "./public/page-data/sq/d/3649515864.json":
 /*!***********************************************!*\
   !*** ./public/page-data/sq/d/3649515864.json ***!
@@ -15281,6 +15352,11 @@ module.exports = require("path");;
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		__webpack_require__.p = "/";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
