@@ -51,6 +51,7 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 <!-- AUTO-GENERATED-CONTENT:END -->
 
+
 ## 📝 Notes
 
 - $color1: rgba(253, 203, 88, 1);
@@ -60,20 +61,27 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - $color5: rgba(252, 171, 64, 1);
 
 
-## ↪️ Next:
+## ↪️ Next
+
 - Image Src Package fix
-- Change landing page E.T.
-- Landing page: Make a hero for the landing page. Use first sentence of the mission statement.
 - Move down the power hour
-- Projects => "Collections"
 - P will get images and Sugiyama copy for that page
 - Events: Add an intro of what the power hour is on the event pages and remove it from landing. (maybe another hero?)
 - instagram icon
 - Newsletter signup on navbar
 
-## ⚠️ I need from y'all:
+
+## ⚠️ I need from y'all
+
 - Newsletter signup link (mailchimp?).
 - Support button link (paypal?).
 - Zoom links for the events.
 - Email to send the contact form too.
 - More for the Sugiyama page.
+
+
+## ✅ Done
+
+- Change landing page E.T.
+- Projects => "Collections"
+- Landing page: Make a hero for the landing page. Use first sentence of the mission statement.
