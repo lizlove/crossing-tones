@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 export default function MyFiles({ data }) {
   return (
     <Layout>
-      <div>
+      <div className="inner">
         <h1>My Site's Files</h1>
         <table>
           <thead>

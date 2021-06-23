@@ -8,12 +8,12 @@ export default function EventPage({ data }) {
   return (
     <Layout>
       <SEO title={post.frontmatter.title} />
-      <div>
+      <section className="inner">
         <h2 class="text-sm">{post.frontmatter.subtitle}</h2>
         <h1>{post.frontmatter.title}</h1>
         <h3>{post.frontmatter.date}, {post.frontmatter.time}</h3>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
+      </section>
     </Layout>
   )
 }

@@ -1194,3 +1194,10 @@ h1.hero-head {
   padding: 2.75rem 2rem;
   margin: 0 auto;
 }
+section.inner + section.inner {
+  padding-top: 0;
+}
+.inner-heading {
+  border-bottom: 2px solid var(--onyx);
+  line-height: 1.4;
+}

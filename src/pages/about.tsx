@@ -12,6 +12,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 const About = (props: PageProps) => (
   <Layout>
     <SEO title="About" />
+    <section className="inner">
     <div className="grid">
       <div className="grid-left">
         <a id="who"></a>
@@ -30,6 +31,7 @@ const About = (props: PageProps) => (
         <AnchorLink className="anchorlink" to="/about#contact" title="Contact" /> */}
       </div>
     </div>
+    </section>
   </Layout>
 );
 

@@ -8,9 +8,8 @@ export default function Events({ data }) {
   return (
     <Layout>
       <SEO title="Events"/>
-      <section>
+      <section className="inner">
       <h1>Upcoming Events</h1>
-      {/* <h4>{data.upcoming.totalCount} Events</h4> */}
       {data.upcoming.edges.map(({ node }) => (
         <div key={node.id}>
           <h4 style={eventStyle}>
@@ -25,9 +24,8 @@ export default function Events({ data }) {
         </div>
       ))}
     </section>
-    <section>
+    <section className="inner">
     <h1>Past Events</h1>
-      {/* <h4>{data.past.totalCount} Events</h4> */}
       {data.past.edges.map(({ node }) => (
         <div key={node.id}>
           <h4 style={eventStyle}>
@@ -72,7 +70,7 @@ export const query = graphql`
       filter: {
         frontmatter: { date: { gte: $currentDate } type: {eq: "event"}}
       }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { fields: [frontmatter___date], order: ASC }
     ) {
       totalCount
       edges {

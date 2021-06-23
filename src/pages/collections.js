@@ -12,7 +12,7 @@ export default function Collections({ data }) {
   return (
     <Layout>
       <SEO title="Collections"/>
-      <section>
+      <section className="inner">
       <h1>Collections</h1>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>

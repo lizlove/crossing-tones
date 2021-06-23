@@ -5,6 +5,9 @@ module.exports = {
     author: `@lizlove`
   },
   plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {

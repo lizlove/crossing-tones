@@ -9,7 +9,9 @@ import ContactForm from '../components/contact-form';
 const Contact = (props: PageProps) => (
   <Layout>
     <SEO title="Contact Us" />
-    <ContactForm />
+    <section className="inner">
+      <ContactForm />
+    </section>
   </Layout>
 );
 
