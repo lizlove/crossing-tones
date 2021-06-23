@@ -32,13 +32,3 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
-
-
-May 6, 2021 – New Music Remembers the Old Master Duke Ellington – Town Hall, July 6, 1980 [Liz, we have an image for this page]
-May 20, 2021 – Pharaoh Sanders with the Collective Black Artists Ensemble – Town Hall, January 26, 1978
-June 3, 2021– Mal Waldron and Charlie Rouse – Soundscape and unreleased studio session, early 1980s
-June 17, 2021 – TBD
-July 1, 2021 – TBD
-July 15, 2021 – TBD
-July 29, 2021 – TBD
-August 12, 2021 – TBD
