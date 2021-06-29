@@ -1116,6 +1116,10 @@ a.button:hover {
 a.header-link:hover {
   border-bottom: none !important;
 }
+.insta {
+  margin-bottom: 0;
+  padding-top: 3px;
+}
 .main {
   min-height: calc(100vh - (6 * 1.45rem));
 }
@@ -1185,7 +1189,7 @@ h1.hero-head {
   line-height: 1.5;
 }
 .hero-subtitle {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.3;
 }

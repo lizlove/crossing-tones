@@ -5300,15 +5300,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const imageStyle = {
-  marginBottom: 0
+const lineStyle = {
+  lineHeight: '21px'
 };
 
 const Header = ({
   siteTitle
 }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("header", {
   style: {
-    marginBottom: `.1rem`
+    alignSelf: "center"
   }
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("div", {
   className: "header-container"
@@ -5328,14 +5328,20 @@ const Header = ({
 }, "Collections"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_0__.Link, {
   to: "/about"
 }, "About"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
+  rel: "noreferrer",
+  target: "_blank",
+  style: lineStyle,
+  href: "http://eepurl.com/hCp2FT"
+}, "Newsletter"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("a", {
   href: "https://www.instagram.com/CrossingTones/",
   rel: "noreferrer",
-  target: "_blank"
+  target: "_blank",
+  style: lineStyle
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default().createElement("img", {
   src: _images_insta_png__WEBPACK_IMPORTED_MODULE_1__.default,
-  style: imageStyle,
-  width: 20,
-  alt: "Instagram"
+  width: 17,
+  alt: "Instagram",
+  className: "insta"
 })))));
 
 Header.propTypes = {
@@ -5554,11 +5560,13 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default(
   className: "hero-head"
 }, "Crossing Tones "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
   className: "hero-subtitle"
-}, "an intermediary custodian for significant collections of Jazz music and related items."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+}, "Gathers significant collections of Jazz music and related items"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
   className: "inner"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", {
   className: "inner-heading"
-}, "Power Hour"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "The Crossing Tones \u201CPower Hour\u201D is a biweekly broadcast of rare and unheard music taken from collections currently in our care. Each Power Hour is livestreamed exclusively and will not be archived, so tuning in via Zoom is the only way to experience these sounds. "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Join us every other Thursday from 8-9PM ET"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+}, "Power Hour"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "The Crossing Tones \u201CPower Hour\u201D is a biweekly broadcast of rare and unheard music taken from collections currently in our care. Each Power Hour is livestreamed exclusively and will not be archived, so tuning in via Zoom is the only way to experience these sounds. For more information join our  ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/"
+}, "mailing list"), "."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Join us every other Thursday from 8-9PM ET."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   className: "button",
   to: "https://wpi.zoom.us/j/97495476280"
 }, "Listen!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, "Schedule"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
@@ -5569,7 +5577,9 @@ const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default(
   to: "/power-hour-6-3/"
 }, "June 3rd \u2013 Mal Waldron and Charlie Rouse (Soundscape and unreleased studio session, early 1980's)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
   to: "/power-hour-6-17/"
-}, "June 17th \u2013 Charles Tyler Group (Sweet Basil, 1984)"))))));
+}, "June 17th \u2013 Charles Tyler Group (Sweet Basil, 1984)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+  to: "/power-hour-7-1/"
+}, "July 1st \u2013 Rashied Ali/William Parker/Mabo Suzuki/Takehisa Kosugi (386 Broadway, February 26, 1984)"))))));
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
 

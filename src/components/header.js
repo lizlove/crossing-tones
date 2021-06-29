@@ -3,12 +3,12 @@ import instagram from "../images/insta.png"
 import PropTypes from "prop-types";
 import React from "react";
 
-const imageStyle= { marginBottom: 0};
+const lineStyle = { lineHeight: '21px'};
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      marginBottom: `.1rem`,
+      alignSelf: "center"
     }}
   >
     <div className="header-container">
@@ -21,9 +21,11 @@ const Header = ({ siteTitle }) => (
         <Link to="/events">Events</Link>
         <Link to="/collections">Collections</Link>
         <Link to="/about">About</Link>
-        <a href="https://www.instagram.com/CrossingTones/" rel="noreferrer" target="_blank"><img src={instagram} style={imageStyle} width={20} alt="Instagram"/></a>
-        {/* <Link className="button" to="/">Newsletter</Link>
-        <Link className="button" to="/">Support</Link> */}
+        <a rel="noreferrer" target="_blank" style={lineStyle} href="http://eepurl.com/hCp2FT">Newsletter</a>
+        <a href="https://www.instagram.com/CrossingTones/" rel="noreferrer" target="_blank" style={lineStyle}>
+          <img src={instagram} width={17} alt="Instagram" className="insta"/>
+        </a>
+        {/*<Link className="button" to="/">Support</Link> */}
       </div>
     </div>
   </header>

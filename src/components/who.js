@@ -19,8 +19,7 @@ const Who = () => (
     <p>
       <b>Charles Iselin </b>(Chicago, IL and Manhattan, NY)
       <br></br>
-      Structural engineer and collector specializing in pre-war Jazz. Current
-      researcher on the life and music of Garnet Clarke.
+      Structural engineer and collector specializing in pre-war Jazz. Custodian of the Phil Schaap radio archive.
     </p>
     <p>
       <b>Joe Lizzi</b> (Queens, NY)
@@ -43,11 +42,7 @@ const Who = () => (
       interests.
     </p>
     <p>
-      <b>Melissa Jones</b>, <i>Founding Member</i> (2020-2021)
-      <br></br>
-      Jazz collector and independent researcher; specialized in the 78 rpm era. Vast
-      experience of the offerings at Jazz at Lincoln Center. Mother of modern
-      Hot Club initiative.
+      <b><i>Crossing Tones honors the legacy of Founding Member, Melissa Jones.</i></b>
     </p>
   </div>
 );

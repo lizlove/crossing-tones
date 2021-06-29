@@ -1,12 +1,12 @@
 ---
-title: "TBD"
+title: "Rashied Ali, William Parker, Mabo Suzuki, Takehisa Kosugi"
 subtitle: "Crossing Tones Power Hour"
 type: "event"
 date: 2021-07-01
 time: "8PM ET"
 ---
 
-<i>To be determined.</i>
+<i>Originally recorded at 386 Broadway, February 26, 1984.</i>
 
 The Crossing Tones “Power Hour” is a biweekly broadcast of rare and unheard music taken from collections currently in our care. Each Power Hour is livestreamed exclusively and will not be archived, so tuning in via Zoom is the only way to experience these sounds.
 
