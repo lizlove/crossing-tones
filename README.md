@@ -63,11 +63,8 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 
 ## ↪️ Next
 
-- Image Src Package fix
-- Add images to Sugiyama and events
+- Image Src Package fix / Add images to Sugiyama and events
 - Add landing page default event listings
-- Events: Add an intro of what the power hour is on the event pages and remove it from landing. (maybe another hero?)
-- Newsletter signup on navbar
 - Link in contact
 
 
@@ -77,3 +74,4 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - Projects => "Collections"
 - Landing page: Make a hero for the landing page. Use first sentence of the mission statement.
 - Move down the power hour
+- Newsletter signup on navbar
