@@ -5580,7 +5580,7 @@ function Events({
   }, ' ', "Jazz Potpourri"), ' ', "and will not be archived, so tuning in via Zoom is the only way to experience these sounds."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "For more information on future programming,", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", {
     className: "bold-link",
     href: "https://crossingtones.us6.list-manage.com/subscribe?u=58c871f96b5aae759fbc21dd0&id=5dbd7a6784"
-  }, "join our mailing list.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Join us every other Thursday from 8-9PM ET.The next Power Hour is, get next hour."), data.upcoming.edges.map(({
+  }, "join our mailing list.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Join us every other Thursday from 8-9PM ET."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h5", null, "The next Power Hour is: get next hour."), data.upcoming.edges.map(({
     node
   }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     key: node.fields.slug
