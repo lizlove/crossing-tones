@@ -2,7 +2,7 @@ import React from 'react';
 import { PageProps } from 'gatsby';
 
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 import Mission from '../components/mission';
 import Principles from '../components/principles';
 import Who from '../components/who';
@@ -11,7 +11,7 @@ import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const About = (props: PageProps) => (
   <Layout>
-    <SEO title="About" />
+    <Seo title="About" />
     <section className="inner">
     <div className="grid">
       <div className="grid-left">

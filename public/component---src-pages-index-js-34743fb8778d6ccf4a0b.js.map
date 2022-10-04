@@ -1,1 +1,18 @@
-{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":["IndexPage","title","className","to"],"mappings":"2FAAA,oEAuBeA,UAlBG,kBAChB,kBAAC,IAAD,KACE,kBAAC,IAAD,CAAKC,MAAM,SACX,6BACA,yDACA,kdAEA,qDAA0B,6BAA1B,IAAgC,kBAAC,OAAD,CAAMC,UAAU,SAASC,GAAG,KAA5B,YAChC,wCACA,4BACE,6GACA,sGACA","file":"component---src-pages-index-js-34743fb8778d6ccf4a0b.js","sourcesContent":["import React from 'react';\nimport { Link } from \"gatsby\";\nimport Layout from '../components/layout';\nimport SEO from '../components/seo';\n\nconst IndexPage = () => (\n  <Layout>\n    <SEO title=\"Home\" />\n    <div>\n    <h1>Crossing Tones Power Hour</h1>\n    <p>\n    The Crossing Tones “Power Hour” is a biweekly broadcast of rare and unheard music taken from collections currently in our care. Each Power Hour is livestreamed exclusively and will not be archived, so tuning in via Zoom is the only way to experience these sounds. The Power Hour is one bloc in a potpourri of Thursday programming hosted by our friends at the Jazz History Database, the entirety of which is free and open to the public.</p>\n    <p>Thursdays at 8 p.m. ET <br/> <Link className=\"button\" to=\"/\">Join us</Link></p>\n    <h3>Schedule</h3>\n    <ul>\n      <li>May 27th – Pharoah Sanders/Collective Black Artists (hosted by Parker Fishel)</li>\n      <li>June 10th – Buddy Rich Big Band with Anita O'Day (hosted by Joe Lizzi)</li>\n      <li>June 24th – Cecil Taylor solo (hosted by Ben Young)</li>\n    </ul>\n  </div>\n  </Layout>\n);\n\nexport default IndexPage;\n"],"sourceRoot":""}
+{
+  "version": 3,
+  "sources": [
+    "webpack:///./src/pages/index.js"
+  ],
+  "names": [
+    "IndexPage",
+    "title",
+    "className",
+    "to"
+  ],
+  "mappings": "2FAAA,oEAuBeA,UAlBG,kBAChB,kBAAC,IAAD,KACE,kBAAC,IAAD,CAAKC,MAAM,SACX,6BACA,yDACA,kdAEA,qDAA0B,6BAA1B,IAAgC,kBAAC,OAAD,CAAMC,UAAU,SAASC,GAAG,KAA5B,YAChC,wCACA,4BACE,6GACA,sGACA",
+  "file": "component---src-pages-index-js-34743fb8778d6ccf4a0b.js",
+  "sourcesContent": [
+    "import React from 'react';\nimport { Link } from \"gatsby\";\nimport Layout from '../components/layout';\nimport Seo from '../components/seo';\n\nconst IndexPage = () => (\n  <Layout>\n    <Seo title=\"Home\" />\n    <div>\n    <h1>Crossing Tones Power Hour</h1>\n    <p>\n    The Crossing Tones “Power Hour” is a biweekly broadcast of rare and unheard music taken from collections currently in our care. Each Power Hour is livestreamed exclusively and will not be archived, so tuning in via Zoom is the only way to experience these sounds. The Power Hour is one bloc in a potpourri of Thursday programming hosted by our friends at the Jazz History Database, the entirety of which is free and open to the public.</p>\n    <p>Thursdays at 8 p.m. ET <br/> <Link className=\"button\" to=\"/\">Join us</Link></p>\n    <h3>Schedule</h3>\n    <ul>\n      <li>May 27th – Pharoah Sanders/Collective Black Artists (hosted by Parker Fishel)</li>\n      <li>June 10th – Buddy Rich Big Band with Anita O'Day (hosted by Joe Lizzi)</li>\n      <li>June 24th – Cecil Taylor solo (hosted by Ben Young)</li>\n    </ul>\n  </div>\n  </Layout>\n);\n\nexport default IndexPage;\n"
+  ],
+  "sourceRoot": ""
+}

@@ -61,11 +61,20 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - $color5: rgba(252, 171, 64, 1);
 
 
-## ↪️ Next
+## 🦁 TODO
+
+- Add slide show to landing
+- Fix full width on header of landing
+- Make Check OUt the Sounds mini hero box
+-
+
+## 🛴 Punt
 
 - Image Src Package fix / Add images to Sugiyama and events
 - Add landing page default event listings
 - Link in contact
+
+
 
 
 ## ✅ Done
@@ -75,3 +84,6 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - Landing page: Make a hero for the landing page. Use first sentence of the mission statement.
 - Move down the power hour
 - Newsletter signup on navbar
+
+
+## ↪️ Punt

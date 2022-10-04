@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack://crossing-tones/./src/pages/collections.js"
+  ],
+  "names": [
+    "Collections",
+    "data",
+    "eventStyle",
+    "marginBottom",
+    "fontWeight",
+    "console",
+    "log",
+    "title",
+    "className",
+    "allMarkdownRemark",
+    "edges",
+    "map",
+    "node",
+    "key",
+    "id",
+    "style",
+    "Link",
+    "to",
+    "fields",
+    "slug",
+    "frontmatter",
+    "excerpt"
+  ],
+  "mappings": "4MAQe,SAASA,EAAT,GAAgC,IAATC,EAAQ,EAARA,KAC9BC,EAAa,CAACC,aAAc,UAAWC,WAAY,KAEzD,OADAC,QAAQC,IAAI,OAAQL,GAElB,gBAAC,IAAD,KACE,gBAAC,IAAD,CAAKM,MAAM,gBACX,2BAASC,UAAU,SACnB,yCACCP,EAAKQ,kBAAkBC,MAAMC,KAAI,gBAAGC,EAAH,EAAGA,KAAH,OAChC,uBAAKC,IAAKD,EAAKE,IACb,sBAAIC,MAAOb,GACT,gBAAC,EAAAc,KAAD,CAAMR,UAAU,YAAYS,GAAIL,EAAKM,OAAOC,MACzCP,EAAKQ,YAAYb,MAAO,MAG7B,yBAAIK,EAAKS",
+  "file": "component---src-pages-collections-js-859b7bac18432ce5259e.js",
+  "sourcesContent": [
+    "import React from \"react\";\nimport { Link } from \"gatsby\";\nimport { graphql } from 'gatsby'\n\nimport Layout from \"../components/layout\";\nimport Seo from \"../components/seo\";\n\n\nexport default function Collections({ data }) {\n  const eventStyle = {marginBottom: \"0.45rem\", fontWeight: 700};\n  console.log(\"🐶🐶\", data);\n  return (\n    <Layout>\n      <Seo title=\"Collections\"/>\n      <section className=\"inner\">\n      <h1>Collections</h1>\n      {data.allMarkdownRemark.edges.map(({ node }) => (\n        <div key={node.id}>\n          <h4 style={eventStyle}>\n            <Link className=\"bold-link\" to={node.fields.slug}>\n              {node.frontmatter.title}{\" \"}\n            </Link>\n          </h4>\n          <p>{node.excerpt}</p>\n        </div>\n      ))}\n    </section>\n    </Layout>\n  )\n}\n\nexport const query = graphql`\n  query AllCollections {\n    allMarkdownRemark(filter: {frontmatter: {type: {eq: \"collection\"}}}) {\n      totalCount\n      edges {\n        node {\n          fields {\n            slug\n          }\n          frontmatter {\n            title\n            started\n            thumbnail\n          }\n          excerpt\n          id\n        }\n      }\n    }\n  }\n`"
+  ],
+  "sourceRoot": ""
+}

@@ -1,0 +1,24 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack://crossing-tones/./src/collections/collection-page.js"
+  ],
+  "names": [
+    "CollectionPage",
+    "post",
+    "data",
+    "markdownRemark",
+    "title",
+    "frontmatter",
+    "className",
+    "dangerouslySetInnerHTML",
+    "__html",
+    "html"
+  ],
+  "mappings": "oMAKe,SAASA,EAAT,GAAoC,IAC3CC,EAD0C,EAATC,KACrBC,eAClB,OACE,gBAAC,IAAD,KACE,gBAAC,IAAD,CAAKC,MAAOH,EAAKI,YAAYD,QAC7B,uBAAKE,UAAU,SACb,0BAAKL,EAAKI,YAAYD,OACtB,uBAAKG,wBAAyB,CAAEC,OAAQP,EAAKQ",
+  "file": "component---src-collections-collection-page-js-1fd1f02501540a6e1539.js",
+  "sourcesContent": [
+    "import React from 'react';\nimport { graphql } from \"gatsby\";\nimport Layout from \"../components/layout\";\nimport Seo from \"../components/seo\";\n\nexport default function CollectionPage({ data })  {\n  const post = data.markdownRemark;\n  return (\n    <Layout>\n      <Seo title={post.frontmatter.title} />\n      <div className=\"inner\">\n        <h1>{post.frontmatter.title}</h1>\n        <div dangerouslySetInnerHTML={{ __html: post.html }} />\n      </div>\n    </Layout>\n  )\n}\n\nexport const query = graphql`\n  query($slug: String!) {\n    markdownRemark(fields: { slug: { eq: $slug } }) {\n      html\n      frontmatter {\n        title\n        thumbnail\n        started\n      }\n    }\n  }\n`"
+  ],
+  "sourceRoot": ""
+}

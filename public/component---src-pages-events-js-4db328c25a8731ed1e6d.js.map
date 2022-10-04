@@ -1,0 +1,36 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack://crossing-tones/./src/pages/events.js"
+  ],
+  "names": [
+    "Events",
+    "data",
+    "eventStyle",
+    "marginBottom",
+    "fontWeight",
+    "title",
+    "className",
+    "upcoming",
+    "edges",
+    "map",
+    "node",
+    "key",
+    "id",
+    "style",
+    "Link",
+    "to",
+    "fields",
+    "slug",
+    "frontmatter",
+    "date",
+    "excerpt",
+    "past"
+  ],
+  "mappings": "6MAKe,SAASA,EAAT,GAA2B,IAATC,EAAQ,EAARA,KACzBC,EAAa,CAACC,aAAc,UAAWC,WAAY,KACzD,OACE,gBAAC,IAAD,KACE,gBAAC,IAAD,CAAKC,MAAM,WACX,2BAASC,UAAU,SACnB,6CACCL,EAAKM,SAASC,MAAMC,KAAI,gBAAGC,EAAH,EAAGA,KAAH,OACvB,uBAAKC,IAAKD,EAAKE,IACb,sBAAIC,MAAOX,GACT,gBAAC,EAAAY,KAAD,CAAMR,UAAU,YAAYS,GAAIL,EAAKM,OAAOC,MACvCP,EAAKQ,YAAYb,MAAO,IACzB,iCACKK,EAAKQ,YAAYC,QAI5B,yBAAIT,EAAKU,cAIf,2BAASd,UAAU,SACnB,yCACGL,EAAKoB,KAAKb,MAAMC,KAAI,gBAAGC,EAAH,EAAGA,KAAH,OACnB,uBAAKC,IAAKD,EAAKE,IACb,sBAAIC,MAAOX,GACT,gBAAC,EAAAY,KAAD,CAAMR,UAAU,YAAYS,GAAIL,EAAKM,OAAOC,MACzCP,EAAKQ,YAAYb,MAAO,IACzB,iCACKK,EAAKQ,YAAYC,QAI1B,yBAAIT,EAAKU",
+  "file": "component---src-pages-events-js-4db328c25a8731ed1e6d.js",
+  "sourcesContent": [
+    "import React from \"react\"\nimport { graphql, Link } from \"gatsby\"\nimport Layout from \"../components/layout\"\nimport Seo from \"../components/seo\";\n\nexport default function Events({ data }) {\n  const eventStyle = {marginBottom: \"0.45rem\", fontWeight: 700}\n  return (\n    <Layout>\n      <Seo title=\"Events\"/>\n      <section className=\"inner\">\n      <h1>Upcoming Events</h1>\n      {data.upcoming.edges.map(({ node }) => (\n        <div key={node.id}>\n          <h4 style={eventStyle}>\n            <Link className=\"bold-link\" to={node.fields.slug}>\n                {node.frontmatter.title}{\" \"}\n                <span>\n                  — {node.frontmatter.date}\n                </span>\n            </Link>\n          </h4>\n          <p>{node.excerpt}</p>\n        </div>\n      ))}\n    </section>\n    <section className=\"inner\">\n    <h1>Past Events</h1>\n      {data.past.edges.map(({ node }) => (\n        <div key={node.id}>\n          <h4 style={eventStyle}>\n            <Link className=\"bold-link\" to={node.fields.slug}>\n              {node.frontmatter.title}{\" \"}\n              <span>\n                — {node.frontmatter.date}\n              </span>\n            </Link>\n          </h4>\n          <p>{node.excerpt}</p>\n        </div>\n      ))}\n    </section>\n    </Layout>\n  )\n}\n\nexport const query = graphql`\n  query AllEvents($currentDate: Date!){\n    past: allMarkdownRemark(\n      filter: {\n        frontmatter: { date: { lt: $currentDate } type: {eq: \"event\"} }\n      }\n      sort: { fields: [frontmatter___date], order: DESC }\n    ) {\n      totalCount\n      edges {\n        node {\n          fields {\n            slug\n          }\n          frontmatter {\n            date(formatString: \"MMMM DD, YYYY\")\n            title\n          }\n          excerpt\n        }\n      }\n    }\n    upcoming: allMarkdownRemark(\n      filter: {\n        frontmatter: { date: { gte: $currentDate } type: {eq: \"event\"}}\n      }\n      sort: { fields: [frontmatter___date], order: ASC }\n    ) {\n      totalCount\n      edges {\n        node {\n          fields {\n            slug\n          }\n          frontmatter {\n            date(formatString: \"MMMM DD, YYYY\")\n            title\n          }\n          excerpt\n        }\n      }\n    }\n  }\n`"
+  ],
+  "sourceRoot": ""
+}

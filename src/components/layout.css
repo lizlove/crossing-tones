@@ -1192,6 +1192,8 @@ h1.hero-head {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.3;
+  text-align: left;
+  width: 100%;
 }
 .inner {
   max-width: 980px;

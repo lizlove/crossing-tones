@@ -1,1 +1,20 @@
-{"version":3,"sources":["webpack:///./src/components/project-post.js","webpack:///./src/pages/projects.tsx"],"names":["ProjectPost","Projects","props","title"],"mappings":"oJAceA,EAZK,kBAClB,6BACE,wCACA,2GAGA,2BACE,6ECOSC,UARE,SAACC,GAAD,OACf,kBAAC,IAAD,KACE,kBAAC,IAAD,CAAKC,MAAM,aACX,wCACA,kBAAC,EAAD","file":"component---src-pages-projects-tsx-180c0e2df97a82fcd790.js","sourcesContent":["import React from 'react';\n\nconst ProjectPost = () => (\n  <div>\n    <h3>Sugiyama</h3>\n    <p>\n      Collection of recordings and ephemera taken by artist and musician Sugiyama.\n    </p>\n    <p>\n      <i>I will become a template of a project post.</i>\n    </p>\n  </div>\n);\n\nexport default ProjectPost;\n","// Gatsby supports TypeScript natively!\nimport React from \"react\";\nimport { PageProps, Link } from \"gatsby\";\n\nimport Layout from \"../components/layout\";\nimport SEO from \"../components/seo\";\nimport ProjectPost from \"../components/project-post\";\n\nconst Projects = (props: PageProps) => (\n  <Layout>\n    <SEO title=\"Projects\" />\n    <h1>Projects</h1>\n    <ProjectPost />\n  </Layout>\n);\n\nexport default Projects;\n"],"sourceRoot":""}
+{
+  "version": 3,
+  "sources": [
+    "webpack:///./src/components/project-post.js",
+    "webpack:///./src/pages/projects.tsx"
+  ],
+  "names": [
+    "ProjectPost",
+    "Projects",
+    "props",
+    "title"
+  ],
+  "mappings": "oJAceA,EAZK,kBAClB,6BACE,wCACA,2GAGA,2BACE,6ECOSC,UARE,SAACC,GAAD,OACf,kBAAC,IAAD,KACE,kBAAC,IAAD,CAAKC,MAAM,aACX,wCACA,kBAAC,EAAD",
+  "file": "component---src-pages-projects-tsx-180c0e2df97a82fcd790.js",
+  "sourcesContent": [
+    "import React from 'react';\n\nconst ProjectPost = () => (\n  <div>\n    <h3>Sugiyama</h3>\n    <p>\n      Collection of recordings and ephemera taken by artist and musician Sugiyama.\n    </p>\n    <p>\n      <i>I will become a template of a project post.</i>\n    </p>\n  </div>\n);\n\nexport default ProjectPost;\n",
+    "// Gatsby supports TypeScript natively!\nimport React from \"react\";\nimport { PageProps, Link } from \"gatsby\";\n\nimport Layout from \"../components/layout\";\nimport Seo from \"../components/seo\";\nimport ProjectPost from \"../components/project-post\";\n\nconst Projects = (props: PageProps) => (\n  <Layout>\n    <Seo title=\"Projects\" />\n    <h1>Projects</h1>\n    <ProjectPost />\n  </Layout>\n);\n\nexport default Projects;\n"
+  ],
+  "sourceRoot": ""
+}

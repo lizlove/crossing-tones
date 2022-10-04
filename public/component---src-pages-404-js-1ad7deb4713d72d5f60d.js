@@ -1,0 +1,2 @@
+(self.webpackChunkcrossing_tones=self.webpackChunkcrossing_tones||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var s=n(7294),u=n(8175),l=n(3751);t.default=function(){return s.createElement(u.Z,null,s.createElement(l.Z,{title:"404: Not found"}),s.createElement("h1",null,"NOT FOUND"),s.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-1ad7deb4713d72d5f60d.js.map

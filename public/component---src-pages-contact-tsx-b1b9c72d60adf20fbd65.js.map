@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack://crossing-tones/./src/pages/contact.tsx"
+  ],
+  "names": [
+    "props",
+    "title",
+    "className"
+  ],
+  "mappings": "wKAiBA,UATgB,SAACA,GAAD,OACd,gBAAC,IAAD,KACE,gBAAC,IAAD,CAAKC,MAAM,eACX,2BAASC,UAAU,SACjB,gBAAC,IAAD",
+  "file": "component---src-pages-contact-tsx-b1b9c72d60adf20fbd65.js",
+  "sourcesContent": [
+    "import React from 'react';\nimport { PageProps } from 'gatsby';\n\nimport Layout from '../components/layout';\nimport Seo from '../components/seo';\nimport ContactForm from '../components/contact-form';\n\n\nconst Contact = (props: PageProps) => (\n  <Layout>\n    <Seo title=\"Contact Us\" />\n    <section className=\"inner\">\n      <ContactForm />\n    </section>\n  </Layout>\n);\n\nexport default Contact;"
+  ],
+  "sourceRoot": ""
+}

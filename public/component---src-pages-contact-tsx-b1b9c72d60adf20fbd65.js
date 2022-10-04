@@ -1,0 +1,2 @@
+(self.webpackChunkcrossing_tones=self.webpackChunkcrossing_tones||[]).push([[650],{5424:function(e,n,t){"use strict";t.r(n);var s=t(7294),c=t(8175),l=t(3751),r=t(8663);n.default=function(e){return s.createElement(c.Z,null,s.createElement(l.Z,{title:"Contact Us"}),s.createElement("section",{className:"inner"},s.createElement(r.Z,null)))}}}]);
+//# sourceMappingURL=component---src-pages-contact-tsx-b1b9c72d60adf20fbd65.js.map

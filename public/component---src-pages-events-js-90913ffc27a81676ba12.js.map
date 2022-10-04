@@ -1,1 +1,30 @@
-{"version":3,"sources":["webpack:///./src/pages/events.js"],"names":["Events","data","title","allMarkdownRemark","totalCount","edges","map","node","key","id","to","fields","slug","frontmatter","date","excerpt"],"mappings":"2FAAA,4GAKe,SAASA,EAAT,GAA2B,IAATC,EAAQ,EAARA,KAC/B,OACE,kBAAC,IAAD,KACE,kBAAC,IAAD,CAAKC,MAAM,WACX,6BACE,sCACA,4BAAKD,EAAKE,kBAAkBC,WAA5B,WACCH,EAAKE,kBAAkBE,MAAMC,KAAI,gBAAGC,EAAH,EAAGA,KAAH,OAChC,yBAAKC,IAAKD,EAAKE,IACb,kBAAC,OAAD,CAAMC,GAAIH,EAAKI,OAAOC,MACpB,4BACGL,EAAKM,YAAYX,MAAO,IACzB,mCACKK,EAAKM,YAAYC,OAGxB,2BAAIP,EAAKQ","file":"component---src-pages-events-js-90913ffc27a81676ba12.js","sourcesContent":["import React from \"react\"\nimport { Link, graphql } from \"gatsby\"\nimport Layout from \"../components/layout\"\nimport SEO from \"../components/seo\";\n\nexport default function Events({ data }) {\n  return (\n    <Layout>\n      <SEO title=\"Events\" />\n      <div>\n        <h1>Events</h1>\n        <h4>{data.allMarkdownRemark.totalCount} Events</h4>\n        {data.allMarkdownRemark.edges.map(({ node }) => (\n          <div key={node.id}>\n            <Link to={node.fields.slug}>\n              <h3>\n                {node.frontmatter.title}{\" \"}\n                <span>\n                  — {node.frontmatter.date}\n                </span>\n              </h3>\n              <p>{node.excerpt}</p>\n            </Link>\n          </div>\n        ))}\n      </div>\n    </Layout>\n  )\n}\n\n// Split into past event query and upcoming event query\nexport const query = graphql`\n  query {\n    allMarkdownRemark(\n      sort: { fields: [frontmatter___date], order: DESC }\n    ) {\n      totalCount\n      edges {\n        node {\n          id\n          frontmatter {\n            title\n            date(formatString: \"DD MMMM, YYYY\")\n          }\n          fields {\n            slug\n          }\n          excerpt\n        }\n      }\n    }\n  }\n`"],"sourceRoot":""}
+{
+  "version": 3,
+  "sources": [
+    "webpack:///./src/pages/events.js"
+  ],
+  "names": [
+    "Events",
+    "data",
+    "title",
+    "allMarkdownRemark",
+    "totalCount",
+    "edges",
+    "map",
+    "node",
+    "key",
+    "id",
+    "to",
+    "fields",
+    "slug",
+    "frontmatter",
+    "date",
+    "excerpt"
+  ],
+  "mappings": "2FAAA,4GAKe,SAASA,EAAT,GAA2B,IAATC,EAAQ,EAARA,KAC/B,OACE,kBAAC,IAAD,KACE,kBAAC,IAAD,CAAKC,MAAM,WACX,6BACE,sCACA,4BAAKD,EAAKE,kBAAkBC,WAA5B,WACCH,EAAKE,kBAAkBE,MAAMC,KAAI,gBAAGC,EAAH,EAAGA,KAAH,OAChC,yBAAKC,IAAKD,EAAKE,IACb,kBAAC,OAAD,CAAMC,GAAIH,EAAKI,OAAOC,MACpB,4BACGL,EAAKM,YAAYX,MAAO,IACzB,mCACKK,EAAKM,YAAYC,OAGxB,2BAAIP,EAAKQ",
+  "file": "component---src-pages-events-js-90913ffc27a81676ba12.js",
+  "sourcesContent": [
+    "import React from \"react\"\nimport { Link, graphql } from \"gatsby\"\nimport Layout from \"../components/layout\"\nimport Seo from \"../components/seo\";\n\nexport default function Events({ data }) {\n  return (\n    <Layout>\n      <Seo title=\"Events\" />\n      <div>\n        <h1>Events</h1>\n        <h4>{data.allMarkdownRemark.totalCount} Events</h4>\n        {data.allMarkdownRemark.edges.map(({ node }) => (\n          <div key={node.id}>\n            <Link to={node.fields.slug}>\n              <h3>\n                {node.frontmatter.title}{\" \"}\n                <span>\n                  — {node.frontmatter.date}\n                </span>\n              </h3>\n              <p>{node.excerpt}</p>\n            </Link>\n          </div>\n        ))}\n      </div>\n    </Layout>\n  )\n}\n\n// Split into past event query and upcoming event query\nexport const query = graphql`\n  query {\n    allMarkdownRemark(\n      sort: { fields: [frontmatter___date], order: DESC }\n    ) {\n      totalCount\n      edges {\n        node {\n          id\n          frontmatter {\n            title\n            date(formatString: \"DD MMMM, YYYY\")\n          }\n          fields {\n            slug\n          }\n          excerpt\n        }\n      }\n    }\n  }\n`"
+  ],
+  "sourceRoot": ""
+}

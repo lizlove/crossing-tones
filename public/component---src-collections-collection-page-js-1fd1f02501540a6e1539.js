@@ -1,0 +1,2 @@
+(self.webpackChunkcrossing_tones=self.webpackChunkcrossing_tones||[]).push([[422],{5395:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return c}});var r=n(7294),a=n(8175),l=n(3751);function c(e){var t=e.data.markdownRemark;return r.createElement(a.Z,null,r.createElement(l.Z,{title:t.frontmatter.title}),r.createElement("div",{className:"inner"},r.createElement("h1",null,t.frontmatter.title),r.createElement("div",{dangerouslySetInnerHTML:{__html:t.html}})))}}}]);
+//# sourceMappingURL=component---src-collections-collection-page-js-1fd1f02501540a6e1539.js.map

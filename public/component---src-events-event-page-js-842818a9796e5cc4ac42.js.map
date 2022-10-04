@@ -1,0 +1,28 @@
+{
+  "version": 3,
+  "sources": [
+    "webpack://crossing-tones/./src/events/event-page.js"
+  ],
+  "names": [
+    "EventPage",
+    "post",
+    "data",
+    "markdownRemark",
+    "title",
+    "frontmatter",
+    "className",
+    "class",
+    "subtitle",
+    "date",
+    "time",
+    "dangerouslySetInnerHTML",
+    "__html",
+    "html"
+  ],
+  "mappings": "kMAKe,SAASA,EAAT,GAA8B,IACrCC,EADoC,EAARC,KAChBC,eAClB,OACE,gBAAC,IAAD,KACE,gBAAC,IAAD,CAAKC,MAAOH,EAAKI,YAAYD,QAC7B,2BAASE,UAAU,SACjB,sBAAIC,MAAM,WAAWN,EAAKI,YAAYG,UACtC,0BAAKP,EAAKI,YAAYD,OACtB,0BAAKH,EAAKI,YAAYI,KAAtB,KAA8BR,EAAKI,YAAYK,MAC/C,uBAAKC,wBAAyB,CAAEC,OAAQX,EAAKY",
+  "file": "component---src-events-event-page-js-842818a9796e5cc4ac42.js",
+  "sourcesContent": [
+    "import React from \"react\"\nimport { graphql } from \"gatsby\"\nimport Layout from \"../components/layout\"\nimport Seo from \"../components/seo\";\n\nexport default function EventPage({ data }) {\n  const post = data.markdownRemark;\n  return (\n    <Layout>\n      <Seo title={post.frontmatter.title} />\n      <section className=\"inner\">\n        <h2 class=\"text-sm\">{post.frontmatter.subtitle}</h2>\n        <h1>{post.frontmatter.title}</h1>\n        <h3>{post.frontmatter.date}, {post.frontmatter.time}</h3>\n        <div dangerouslySetInnerHTML={{ __html: post.html }} />\n      </section>\n    </Layout>\n  )\n}\n\nexport const query = graphql`\n  query($slug: String!) {\n    markdownRemark(fields: { slug: { eq: $slug } }) {\n      html\n      frontmatter {\n        title\n        subtitle\n        date(formatString: \"dddd, MMMM DD\")\n        time\n        type\n      }\n    }\n  }\n`"
+  ],
+  "sourceRoot": ""
+}
