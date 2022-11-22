@@ -1,13 +1,13 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Seo from '../components/seo';
 
 export default function Events({ data }) {
   const eventStyle = { marginBottom: '0.45rem', fontWeight: 700 };
   return (
     <Layout>
-      <SEO title="Events" />
+      <Seo title="Events" />
       <section className="inner">
         <h1>Upcoming Events</h1>
         {data.upcoming.edges.map(({ node }) => (
@@ -75,15 +75,17 @@ export const query = graphql`
       sort: { frontmatter: { date: ASC } }
     ) {
       totalCount
-      node {
-        fields {
-          slug
+      edges {
+        node {
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+          excerpt
         }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-        }
-        excerpt
       }
     }
   }
