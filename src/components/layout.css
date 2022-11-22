@@ -1205,3 +1205,7 @@ section.inner + section.inner {
   border-bottom: 2px solid var(--onyx);
   line-height: 1.4;
 }
+.inner-hero {
+  width: 100%;
+  text-align: center
+}
