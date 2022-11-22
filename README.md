@@ -1,9 +1,3 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<!-- <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p> -->
 <h1 align="center">
   🎷 Crossing Tones 🎷
 </h1>
@@ -26,30 +20,9 @@ Gatsby landing page for Crossing Tones, an intermediary custodian for significan
     Your site is now running at `http://localhost:8000`!
 
 
-## 🧐 What's inside?
-
-A quick look at the top-level files and directories you'll see in this Gatsby project.
-
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
-
-
 ## 💫 Deploy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Flizlove%2Fcrossing-tones)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
 
 
 ## 📝 Notes
@@ -61,17 +34,6 @@ A quick look at the top-level files and directories you'll see in this Gatsby pr
 - $color5: rgba(252, 171, 64, 1);
 
 
-## ↪️ Next
+## 🦁 TODO
+- See Github issues for active TODO list.
 
-- Image Src Package fix / Add images to Sugiyama and events
-- Add landing page default event listings
-- Link in contact
-
-
-## ✅ Done
-
-- Change landing page E.T.
-- Projects => "Collections"
-- Landing page: Make a hero for the landing page. Use first sentence of the mission statement.
-- Move down the power hour
-- Newsletter signup on navbar

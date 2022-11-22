@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { useFormik, FormikProvider, Form, useField } from 'formik';
 import * as Yup from 'yup';
 
@@ -80,12 +80,12 @@ const TextareaLiveFeedback = ({ label, helpText, ...props }) => {
   );
 };
 
-const Example = () => {
+const FormInner = () => {
   const formik = useFormik({
     initialValues: {
       name: '',
       email: '',
-      message: ''
+      message: '',
     },
     onSubmit: async (values) => {
       // TODO: where is the submit email?
@@ -93,10 +93,13 @@ const Example = () => {
       alert(JSON.stringify(values, null, 2));
     },
     validationSchema: Yup.object({
-      name: Yup.string()
+      name: Yup.string().required('Required'),
+      email: Yup.string()
+        .email('Please provide a valid email.')
         .required('Required'),
-      email: Yup.string().email('Please provide a valid email.').required('Required'),
-      message: Yup.string().max(999, 'Max length is 1000 characters.').required('Required'),
+      message: Yup.string()
+        .max(999, 'Max length is 1000 characters.')
+        .required('Required'),
     }),
   });
 
@@ -136,12 +139,14 @@ const Example = () => {
 export default class ContactForm extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Contact Us</h1>
-        <div className="contact-form">
-          <Example />
+      <div className="hero">
+        <div className="inner">
+          <h1>Contact Us</h1>
+          <div className="contact-form">
+            <FormInner />
+          </div>
         </div>
       </div>
-    )
+    );
   }
 }

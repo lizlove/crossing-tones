@@ -2,17 +2,17 @@ module.exports = {
   siteMetadata: {
     title: `Crossing Tones`,
     description: `An intermediary custodian for significant collections of Jazz music and related items. We gather essential source materials and prepare them for acquisition, preservation, and educational initiatives.`,
-    author: `@lizlove`
+    author: `@lizlove`,
   },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
-        offset: -50
-      }
+        offset: -50,
+      },
     },
     `gatsby-plugin-react-helmet`,
     {
