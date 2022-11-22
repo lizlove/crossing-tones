@@ -18,7 +18,6 @@ const About = (props: PageProps) => (
         <a id="who"></a>
         <Who />
         <a id="contact"></a>
-        <Contact/>
       </div>
       <div className="grid-right">
         <a id="mission"></a>
@@ -32,6 +31,7 @@ const About = (props: PageProps) => (
       </div>
     </div>
     </section>
+    <Contact/>
   </Layout>
 );
 
