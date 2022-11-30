@@ -7,7 +7,6 @@ import Seo from '../components/seo';
 
 export default function Collections({ data }) {
   const eventStyle = { marginBottom: '0.45rem', fontWeight: 700 };
-  console.log('🐶🐶', data);
   return (
     <Layout>
       <Seo title="Collections" />
