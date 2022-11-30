@@ -20,10 +20,39 @@ const IndexPage = () => (
       <section className="inner">
         <h1 className="inner-heading">Explore our collections</h1>
         <GallerySection />
-        <p>
+        <p className="center">
           <Link className="button" to="/collections">
-            Explore
+            Explore our collections
           </Link>
+        </p>
+      </section>
+      <div className="hero">
+        <section className="inner inner-hero inner-cta">
+          <h1 className="cta-head">Check out our sounds</h1>
+          <p class="mt-4 text-lg leading-6 text-indigo-200">
+            Ac euismod vel sit maecenas id pellentesque eu sed
+            consectetur. Malesuada adipiscing sagittis vel nulla nec.
+          </p>
+          <Link className="button secondary" to="/collections">
+            Listen!
+          </Link>
+        </section>
+      </div>
+      <section className="inner">
+        <h1 className="inner-heading">Our Mission</h1>
+        <p className="text-body">
+          Crossing Tones is a 501(c)(3) non-profit that acts as an
+          intermediary custodian for significant collections of Jazz
+          music and related items.
+        </p>
+        <p className="text-body">
+          We gather essential source materials and prepare them for
+          acquisition, preservation, and use in meaningful teaching
+          and listening initiatives.
+        </p>
+        <p className="text-body">
+          Through our efforts we hope to facilitate research, deepen
+          appreciation, and broaden the listener base for the music.
         </p>
       </section>
     </div>

@@ -3,6 +3,7 @@
   --glaucous: #7180b9;
   --honeydew: #dff3e4;
   --onyx: #3d3d3d;
+  /* --onyx: rgb(68, 68, 68); */
   --orange-peel: #ff9f1c;
   --cedar-chest: #c05746;
   --gray-900: #111114;
@@ -439,6 +440,10 @@ p {
 }
 .text-sm {
   font-size: 0.875rem;
+}
+.text-body {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
 }
 figure {
   margin-left: 0;
@@ -922,6 +927,12 @@ a.button {
   user-select: none;
 }
 
+a.button.secondary {
+  background-color: var(--orange-peel);
+  border-color:transparent;
+  color: var(--onyx)
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -930,6 +941,8 @@ input[type='button']:hover,
 button[type='submit']:hover,
 a.button:hover {
   background: var(--gray-900);
+  border-color: transparent !important;
+  color: var(--white)
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1194,6 +1207,19 @@ h1.hero-head {
   border-bottom: 2px solid var(--orange-peel) !important;
   line-height: 1.5;
 }
+.inner-cta {
+  text-align: center;
+}
+.cta-head {
+  font-weight: bold;
+  color: white;
+  line-height: 1.5;
+}
+.cta-body {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
 .hero-subtitle {
   font-size: 1.75rem;
   font-weight: 500;
@@ -1203,6 +1229,12 @@ h1.hero-head {
   max-width: 1040px;
   padding: 2.75rem 2rem;
   margin: 0 auto;
+}
+.onyx {
+  background-color: var(--onyx)
+}
+.onyx > * {
+  color: var(--white);
 }
 section.inner + section.inner {
   padding-top: 0;

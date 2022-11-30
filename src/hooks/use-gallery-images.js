@@ -23,6 +23,5 @@ export const useGalleryImages = () => {
       }
     `
   );
-  console.log('😺', images);
   return images.edges;
 };
