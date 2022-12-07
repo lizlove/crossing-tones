@@ -25,10 +25,14 @@ export default function GallerySection() {
       }
     `
   );
+  const getCaption = (index, node) => {
+    console.log(index, node);
+    return `Sugiyama ${index}`;
+  };
   const images = data.images.edges.map(({ node }, index) => ({
     ...node.childImageSharp,
     //TODO: Get caption info
-    caption: `Sugiyama ${index}`,
+    caption: getCaption(index, node),
   }));
   return <Gallery images={images} />;
 }

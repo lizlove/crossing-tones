@@ -7,6 +7,7 @@ import Mission from '../components/mission';
 import Principles from '../components/principles';
 import Who from '../components/who';
 import Contact from '../components/contact-form';
+import Donate from '../components/donate'
 
 const About = (props: PageProps) => (
   <Layout>
@@ -16,8 +17,7 @@ const About = (props: PageProps) => (
       <div className="grid-left">
         <a id="who"></a>
         <Who />
-        {/* TODO: ADD DONATE LINK TO THIS BUTTON */}
-        {/* <a href="/" className="button button-full">Donate!</a> */}
+        <a href="/" className="button button-full">Donate!</a>
       </div>
       <div className="grid-right">
         <a id="mission"></a>
