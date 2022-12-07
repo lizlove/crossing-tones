@@ -8,38 +8,35 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div>
-      <div className="hero">
-        <section className="inner inner-hero">
-          <h1 className="hero-head">Crossing Tones </h1>
-          <br></br>
-          <span className="hero-subtitle">
-            Recovering significant Jazz collections
-          </span>
-        </section>
-      </div>
       <section className="inner">
-        <h1 className="inner-heading">Explore our collections</h1>
-        <GallerySection />
-        <p className="center">
-          <Link className="button" to="/collections">
-            Explore our collections
-          </Link>
+        <h1 className="inner-heading">
+          Recovering significant Jazz collections
+        </h1>
+        <p className="text-body">
+          <GallerySection />
         </p>
+        <Link className="button" to="/collections">
+          Explore
+        </Link>
       </section>
       <div className="hero">
-        <section className="inner inner-hero inner-cta">
-          <h1 className="cta-head">Check out our sounds</h1>
-          <p class="mt-4 text-lg leading-6 text-indigo-200">
+        <section className="inner inner-hero">
+          <h1 className="hero-head">Check out our sounds</h1>
+          <br></br>
+          <span className="hero-subtitle">
+            {' '}
             Ac euismod vel sit maecenas id pellentesque eu sed
             consectetur. Malesuada adipiscing sagittis vel nulla nec.
-          </p>
+          </span>
+          <br></br>
+          <br></br>
           <Link className="button secondary" to="/collections">
             Listen!
           </Link>
         </section>
       </div>
       <section className="inner">
-        <h1 className="inner-heading">Our Mission</h1>
+        <h1 className="inner-heading">Mission</h1>
         <p className="text-body">
           Crossing Tones is a 501(c)(3) non-profit that acts as an
           intermediary custodian for significant collections of Jazz
@@ -54,6 +51,9 @@ const IndexPage = () => (
           Through our efforts we hope to facilitate research, deepen
           appreciation, and broaden the listener base for the music.
         </p>
+        <Link className="button" to="/about">
+          More
+        </Link>
       </section>
     </div>
   </Layout>

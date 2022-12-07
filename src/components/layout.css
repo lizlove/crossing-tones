@@ -932,7 +932,9 @@ a.button.secondary {
   border-color:transparent;
   color: var(--onyx)
 }
-
+.button-full {
+  width: 100%;
+}
 button:hover {
   cursor: pointer;
 }
@@ -1207,7 +1209,7 @@ h1.hero-head {
   border-bottom: 2px solid var(--orange-peel) !important;
   line-height: 1.5;
 }
-.inner-cta {
+.inner-cta, .center {
   text-align: center;
 }
 .cta-head {
@@ -1240,7 +1242,7 @@ section.inner + section.inner {
   padding-top: 0;
 }
 .inner-heading {
-  border-bottom: 2px solid var(--onyx);
+  /* border-bottom: 2px solid var(--onyx); */
   line-height: 1.4;
 }
 .inner-hero {
