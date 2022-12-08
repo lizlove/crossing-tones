@@ -1204,6 +1204,10 @@ footer {
   background-color: var(--onyx);
   color: var(--white);
 }
+.side-by-side {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 h1.hero-head {
   margin-bottom: 0;
   border-bottom: 2px solid var(--orange-peel) !important;

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+import { StaticImage } from 'gatsby-plugin-image';
 import GallerySection from '../components/gallery-section';
 
 const IndexPage = () => (
@@ -19,7 +20,11 @@ const IndexPage = () => (
           Explore
         </Link>
       </section>
-      <div className="hero">
+      <div className="hero side-by-side">
+        <StaticImage
+          src="../images/sugiyama_reel.jpeg"
+          alt="A reel"
+        />
         <section className="inner inner-hero">
           <h1 className="hero-head">Check out our sounds</h1>
           <br></br>
