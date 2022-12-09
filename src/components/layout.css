@@ -1204,6 +1204,10 @@ footer {
   background-color: var(--onyx);
   color: var(--white);
 }
+.side-by-side {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+}
 h1.hero-head {
   margin-bottom: 0;
   border-bottom: 2px solid var(--orange-peel) !important;
@@ -1248,4 +1252,7 @@ section.inner + section.inner {
 .inner-hero {
   width: 100%;
   /* text-align: center */
+}
+.side-image{
+  object-fit: fill;
 }

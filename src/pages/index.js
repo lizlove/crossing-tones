@@ -2,31 +2,45 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
+import { StaticImage } from 'gatsby-plugin-image';
 import GallerySection from '../components/gallery-section';
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div>
-      <section className="inner">
-        <h1 className="inner-heading">
-          Recovering significant Jazz collections
-        </h1>
-        <p className="text-body">
+      <div className="side-by-side">
+        <section className="inner">
+          <h1 className="inner-heading">
+            Recovering significant Jazz collections
+          </h1>
+          {/* <p className="text-body">
           <GallerySection />
-        </p>
-        <Link className="button" to="/collections">
-          Explore
-        </Link>
-      </section>
-      <div className="hero">
+        </p> */}
+          <Link className="button" to="/collections">
+            Explore
+          </Link>
+        </section>
+        <StaticImage
+          src="../images/gallery/sugiyama_0.jpeg"
+          alt="A reel"
+          placeholder="blurred"
+          className="side-image"
+        />
+      </div>
+      <div className="hero side-by-side">
+        <StaticImage
+          src="../images/sugiyama_reel.jpeg"
+          alt="A reel"
+          placeholder="blurred"
+          // layout="fixed"
+        />
         <section className="inner inner-hero">
           <h1 className="hero-head">Check out our sounds</h1>
           <br></br>
           <span className="hero-subtitle">
             {' '}
-            Ac euismod vel sit maecenas id pellentesque eu sed
-            consectetur. Malesuada adipiscing sagittis vel nulla nec.
+            Sample the contents of our collections.
           </span>
           <br></br>
           <br></br>
