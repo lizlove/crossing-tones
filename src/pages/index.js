@@ -40,11 +40,11 @@ const IndexPage = () => (
           <br></br>
           <span className="hero-subtitle">
             {' '}
-            Sample the contents of our collections.
+            Join one of our listening sessions.
           </span>
           <br></br>
           <br></br>
-          <Link className="button secondary" to="/collections">
+          <Link className="button secondary" to="/events">
             Listen!
           </Link>
         </section>
