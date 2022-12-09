@@ -20,6 +20,13 @@ const IndexPage = () => (
           <Link className="button" to="/collections">
             Explore
           </Link>
+          <br></br>
+          <br></br>
+          <br></br>
+          <small>
+            right: Julius Hemphill Ensemble, from the collection of
+            Kazunori Sugiyama
+          </small>
         </section>
         <StaticImage
           src="../images/gallery/sugiyama_0.jpeg"
@@ -47,6 +54,12 @@ const IndexPage = () => (
           <Link className="button secondary" to="/events">
             Listen!
           </Link>
+          <br></br>
+          <br></br>
+          <small>
+            Left: Audio reel recorded by Kazunori Sugiyama, 23
+            February 1980 at the Public Theater, New York City
+          </small>
         </section>
       </div>
       <section className="inner">
