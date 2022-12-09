@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
 import { StaticImage } from 'gatsby-plugin-image';
-import GallerySection from '../components/gallery-section';
 
 const IndexPage = () => (
   <Layout>
@@ -14,9 +13,6 @@ const IndexPage = () => (
           <h1 className="inner-heading">
             Recovering significant Jazz collections
           </h1>
-          {/* <p className="text-body">
-          <GallerySection />
-        </p> */}
           <Link className="button" to="/collections">
             Explore
           </Link>
@@ -24,7 +20,7 @@ const IndexPage = () => (
           <br></br>
           <br></br>
           <small>
-            right: Julius Hemphill Ensemble, from the collection of
+            Right: Julius Hemphill Ensemble, from the collection of
             Kazunori Sugiyama
           </small>
         </section>
